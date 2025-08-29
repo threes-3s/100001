@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="/icons/apple-touch-icon.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESTJ | MBTI | 性格测试 | 十六人格</title>
+    <meta
+      name="keywords"
+      content="MBTI,16personalities,测试性格,免费性格测试,十六人格,九型人格测试,职业性格测试,工作规划,职业发展,恋爱,三观,人格,内向,外向,INFP,INTJ,INTP,ISTJ,INFJ,ENTP,ENFP,ISFJ,ISFP,ENTJ,ISTP,ESFP,ESTJ,ESTP,ESFJ,ENFJ"
+    />
+    <meta
+      name="description"
+      content="超过200万用户选择的职业性格及人才测评平台,提供权威、准确的MBTI十六型人格性格测试及海量相关内容,帮助您找到最合适的职业和人生方向"
+    />
+    <script
+      defer=""
+      src="https://hm.baidu.com/hm.js?6e338f57d51465d49b34a3fa8fd2e533"
+    ></script>
+    <link rel="dns-prefetch" href="https://s.one-quant.com" />
+    <link rel="dns-prefetch" href="http://tcb-api.tencentcloudapi.com" />
+    <script
+      type="module"
+      async=""
+      crossorigin=""
+      src="/assets/app-Ba0Wni1V.js"
+    ></script>
+    <link rel="stylesheet" crossorigin="" href="/assets/B2XaiBzU.css" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script>
+    <link rel="modulepreload" crossorigin="" href="/assets/Ceo1e4fE.js" />
+    <link rel="stylesheet" href="/assets/y62ks7c4.css" />
+  </head>
+
+  <body>
+    <div id="app" data-server-rendered="true">
+      <!--[-->
+      <main data-v-e26d0c9e="">
+        <header data-v-e26d0c9e="" data-v-85a67040="">
+          <ul
+            role="menubar"
+            style="--el-menu-level: 0"
+            class="el-menu el-menu--horizontal menu"
+            data-v-85a67040=""
+          >
+            <li
+              class="el-menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[--><img
+                height="45px"
+                src="data:image/png;base64,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"
+                data-v-85a67040=""
+              /><!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <div class="flex-grow" data-v-85a67040=""></div>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[-->MBTI<!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[-->性格类型<!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[-->性格测试<!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[-->测试结果<!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[--><a
+                href="https://answer-book.com"
+                target="_blank"
+                data-v-85a67040=""
+                >答案之书</a
+              ><!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[--><!--]--><!--[--><!--]--><!--]-->
+            </li>
+          </ul>
+          <!--teleport start-->
+          <div
+            class="el-overlay menu-drawer-overlay"
+            style="z-index: 3014; display: none"
+          >
+            <!--[--><!--[-->
+            <div
+              aria-modal="true"
+              aria-labelledby="el-id-3183-26"
+              aria-describedby="el-id-3183-27"
+              class="menu-drawer el-drawer rtl"
+              style="width: 30%"
+              role="dialog"
+            >
+              <span class="el-drawer__sr-focus" tabindex="-1"></span>
+              <header class="el-drawer__header">
+                <!--[-->
+                <div class="menu-drawer-header" data-v-85a67040="">
+                  <img
+                    src="data:image/svg+xml,%3csvg%20t='1750684389471'%20fill='%2388619a'%20class='icon'%20viewBox='0%200%201024%201024'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20p-id='19915'%20width='200'%20height='200'%3e%3cpath%20d='M109.4%2066.8c27-8.2%2056.2%202.2%2071.8%2025.8l330.8%20496L842.8%2092.4c15.6-23.4%2044.8-34%2071.8-25.8S960%2099.8%20960%20128v768c0%2035.4-28.6%2064-64%2064s-64-28.6-64-64V339.4L565.2%20739.6c-11.8%2017.8-31.8%2028.4-53.2%2028.4s-41.4-10.6-53.2-28.4L192%20339.4V896c0%2035.4-28.6%2064-64%2064S64%20931.4%2064%20896V128c0-28.2%2018.4-53%2045.4-61.2z'%20fill='%2388619a'%20p-id='19916'%3e%3c/path%3e%3c/svg%3e"
+                    width="35"
+                    style="margin-right: 10px"
+                    data-v-85a67040=""
+                  />
+                  <div class="brand" data-v-85a67040="">
+                    <span data-v-85a67040="">更好的了解你自己</span>
+                    <h3 data-v-85a67040="">MBTI 性格测试</h3>
+                  </div>
+                </div>
+                <!--]--><button
+                  aria-label="Close this dialog"
+                  class="el-drawer__close-btn"
+                  type="button"
+                >
+                  <i class="el-icon el-drawer__close" style=""
+                    ><!--[--><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 1024 1024"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z"
+                      ></path></svg
+                    ><!--]--></i
+                  >
+                </button>
+              </header>
+              <!--v-if--><!--v-if-->
+            </div>
+            <!--]--><!--]-->
+          </div>
+          <!--teleport end--><svg
+            class="menu-icon"
+            viewBox="0 0 48 48"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            data-v-85a67040=""
+          >
+            <path
+              fill="#88619a"
+              d="M44.438 10.688H3.562A.564.564 0 0 1 3 10.124v-2.25c0-.31.253-.563.563-.563h40.874c.31 0 .563.254.563.563v2.25c0 .31-.253.563-.563.563zm0 15H3.562A.564.564 0 0 1 3 25.125v-2.25c0-.31.253-.563.563-.563h40.874c.31 0 .563.254.563.563v2.25c0 .31-.253.563-.563.563zm0 15H3.562A.564.564 0 0 1 3 40.124v-2.25c0-.31.253-.563.563-.563h40.874c.31 0 .563.254.563.563v2.25c0 .31-.253.563-.563.563z"
+              data-v-85a67040=""
+            ></path>
+          </svg>
+        </header>
+        <div
+          class="container"
+          style="background: #4298b4"
+          data-v-e26d0c9e=""
+          data-v-32bf60fe=""
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1920 60"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+            class="wave-shape"
+            style="background: #4298b4"
+            data-v-32bf60fe=""
+          >
+            <path
+              d="m0 20 420 40L800 0l750 60 370-45V0H0z"
+              fill="#fff"
+              data-v-32bf60fe=""
+            ></path></svg
+          ><!--[-->
+          <div class="content" data-v-e26d0c9e="">
+            <div
+              class="type-info"
+              style="background: #4298b4"
+              data-v-e26d0c9e=""
+            >
+              <h1 data-v-e26d0c9e="">总经理</h1>
+              <h3 data-v-e26d0c9e="">ESTJ性格-e人</h3>
+              <p data-v-e26d0c9e="">
+                总经理是出色的组织者，在管理事物或人方面无与伦比。
+              </p>
+            </div>
+            <div class="type-img" data-v-e26d0c9e=""></div>
+            <div class="clear" data-v-e26d0c9e=""></div>
+          </div>
+          <!--]-->
+          <div class="bg bg-desktop" data-v-32bf60fe=""><!--[--><!--]--></div>
+          <div class="bg bg-mobile" data-v-32bf60fe=""><!--[--><!--]--></div>
+        </div>
+        <!---->
+        <div class="article mbti-container" data-v-e26d0c9e="">
+          <h1 data-v-e26d0c9e="">总经理</h1>
+          <div class="el-tabs el-tabs--right tabs" data-v-e26d0c9e="">
+            <div class="el-tabs__header el-tabs__header-vertical is-right">
+              <div class="el-tabs__nav-wrap is-right">
+                <!---->
+                <div class="el-tabs__nav-scroll">
+                  <div
+                    class="el-tabs__nav is-right"
+                    style="transform: translateY(-0px)"
+                    role="tablist"
+                  >
+                    <div class="el-tabs__active-bar is-right" style=""></div>
+                    <!--[--><!--]-->
+                  </div>
+                </div>
+              </div>
+              <!---->
+            </div>
+            <div class="el-tabs__content">
+              <!--[-->
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <blockquote>
+                    <p>良好的秩序是一切事物的基础。</p>
+                    <footer>埃德蒙·伯克</footer>
+                  </blockquote>
+                  <p>
+                    总经理是传统和秩序的代表，他们利用对什么是正确、错误和社会上可接受的理解将家庭和社区团结在一起。秉承诚实、奉献和尊严的价值观，具有执行人格类型的人因其明确的建议和指导而受到重视，他们愉快地在艰难的道路上引领前进。总经理以将人们聚集在一起为荣，经常扮演社区组织者的角色，努力将每个人聚集在一起，庆祝当地重要的活动，或者捍卫将家庭和社区团结在一起的传统价值观。
+                  </p>
+
+                  <h2>以身作则</h2>
+                  <p>
+                    在民主社会中，对这种领导的需求很高，并且他们构成了不少于11%
+                    的人口，难怪许多总统都是总经理类型。法治的坚定信徒，认为权威必须有获得大众认可的业绩，总经理以身作则，表现出奉献精神和充满决心的坦诚，并完全拒绝懒惰和作弊，尤其是在工作中。如果有人宣称辛勤的人力工作是建立品行的绝佳方法，这个人就是总经理。
+                  </p>
+                  <p>
+                    总经理清晰地感知到他们周围的环境，并生活在一个清晰、可核实事实的世界里--他们对知识的把握意味着，即使面对强大的抵抗，他们也会坚持自己的原则，推动一种明确的愿景，即什么是可以接受的，什么是不可以接受的。他们的观点也不只是空谈，因为总经理们非常愿意深入到最具挑战性的项目中，改进行动计划，并在此过程中对细节进行分类，即使最复杂的任务也显得轻松而易于完成。
+                  </p>
+                  <p>
+                    然而，总经理们不会独自工作，他们期望自己的可靠性和职业道德得到回馈--这种性格类型的人实现了他们的承诺，如果合伙人或下属因无能或懒惰，或者更糟糕的是不诚实而危及他们，他们会毫不犹豫地表现出愤怒。这可能为他们赢得不够灵活的声誉，这是所有守护者都拥有的特质，但这并不是因为总经理任意这般固执，而是因为他们真正相信这些价值观能维持社会正常运转。
+                  </p>
+                  <h2>更大的责任</h2>
+                  <div class="description-pullout">
+                    总经理是模范公民的经典形象:
+                    他们帮助邻居，维护法律，并努力确保每个人都参与他们所珍视的社区和组织。
+                  </div>
+                  <p>
+                    总经理面临的主要挑战是要认识到，并不是每个人都遵循相同的路线或以相同的方式做出贡献。真正的领导者认识到个人以及团队的力量，并帮助将这些人的想法引入实施层面上。这样，总经理就确实掌握了所有的事实，并且能够把每个人引向有效的方向。
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e=""></div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e=""></div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ESTJ
+                        人格类型（高管）的人是坚强、传统的朋友，他们重视忠诚和共同的价值观。他们之间的友谊通常由他们共同的活动和日常活动（外部因素）决定，而不是智力或神秘的兼容性。但这绝不会削弱他们的关系——ESTJ
+                        的友谊是值得信赖的，并且相互感兴趣，可以成为强大的联系，经受住生活的变化，始终如一。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ESTJ
+                        重视能为他们提供稳定感并培养共同致力于维护高标准和共同价值观的关系。</font
+                      ></font
+                    >
+                  </div>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >设定路线</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >在他们既有的朋友中，具有 ESTJ
+                        人格类型的人表现得外向而热情，总是非常乐意带别人一起进行一些健康的运动和户外活动。他们有时会在推动参与时有点霸道，但这只是因为他们希望每个人都玩得开心。他们的朋友从不缺少参加社交活动和活动的邀请，从当地球赛的门票到周末露营之旅，再到周日烧烤。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="scene">
+                    <img
+                      style="display: none"
+                      alt="ESTJ（执行型）朋友"
+                      src="/scene/sentinels_Executive_ESTJ_friendships.svg"
+                    />
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ESTJ
+                        寻求建立在信任和忠诚基础上的牢固友谊（尽管对家庭的忠诚是第一位的）。这种性格类型的人积极且思维敏捷，永远不会被指责为没有做足够的事来抵御一点无聊。虽然他们可能不是无忧无虑的，但
+                        ESTJ
+                        知道如何发挥自己的作用，确保他们的朋友过得愉快。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >不过，他们建立和维持友谊的方式确实限制了友谊的范围。他们倾向于寻找与自己相似、同样尊重传统和制度的人。ESTJ
+                        型人格天生固执，他们很难与那些经常不同意他们的原则和信仰的人找到足够的共同点，从而真正建立友谊纽带。</font
+                      ></font
+                    >
+                  </p>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >更广泛的影响</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ESTJ
+                        在友谊方面的挑战不在于找到有趣的事情做或与有趣的人一起做，而在于找到朋友和活动的多样性。尽管他们积极参与社区活动，但他们甚至很难完全倾听不同的意见，更不用说与那些始终表达不同观点的人交朋友了。无论是关于当地政治问题，还是关于他们认为不合理的更情绪化、更理想化的性格的有效性，具有
+                        ESTJ
+                        人格类型的人都可以付出更多努力来真正理解这些不同观点。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >简而言之，对于 ESTJ
+                        来说，拥有一些忠诚的反对者是有益健康的。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >在与自己想法不同的熟人中接触新想法不会有什么坏处——ESTJ
+                        人格类型的人要么会找到更好的方法和更强大的基础，要么会因为成功捍卫了自己的信念而对自己的信念更加有信心。正如他们可能认为那些整天躲在地下室玩电子游戏的孤独者需要多出去走走一样，ESTJ
+                        自己也需要确保自己走出自己不接受挑战的观点和信念的泡沫。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >然而，尽管 ESTJ
+                        对待友谊的方式更加挑剔，可能会带来一些挑战，但正是他们的一致性、诚实和明确的期望往往会加强他们与朋友之间的联系。他们不仅致力于社交圈，而且会保护社交圈，投入所需的时间和资源来维持他们的联系。</font
+                      ></font
+                    >
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >对于具有 ESTJ
+                        人格类型（高管）的人来说，“勤奋、传统、尊重”的座右铭在他们与孩子的关系中得到了最好的体现。在很多方面，他们都非常严格。他们是家庭传统的守护者，在执行他们制定的规则和标准时毫不犹豫。他们通常被视为模范公民，他们希望自己的孩子维护这一形象，继续以他们树立的榜样，礼貌待人、尊重他人——不服从是不能容忍的。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ESTJ
+                        型人格的人对生活有着非常责任感，他们坚信，只要自己有能力，就应该尽己所能为家庭和社区做出贡献。这种观点当然也延伸到了他们的孩子身上，只要他们有能力，他们的孩子就应该以自己的方式做出贡献，比如收拾盘子、打扫房间、按时睡觉——保持秩序。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="scene">
+                    <img
+                      style="display: none"
+                      alt="ESTJ（执行型）父母"
+                      src="/scene/sentinels_Executive_ESTJ_parenthood.svg"
+                    />
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >随着孩子进入更自然叛逆的年龄，这种不灵活性可能会成为一种挑战。ESTJ
+                        会捍卫自己的权利，他们与孩子的关系也一样，但他们希望孩子遵守他们为确保保护而建立的结构。具有这种性格类型的人喜欢创造安全、稳定的环境，他们认为拒绝这些考虑是一种侮辱——同样，不服从是不能容忍的。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >具有 ESTJ
+                        人格类型的人可以努力进一步培养灵活性、理解力和耐心，同时处理孩子新出现的叛逆性格以及通常伴随而来的独特观点。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >这并不是说他们对孩子抱有不切实际的完美期望——ESTJ
+                        是脚踏实地的人，他们只是希望看到自己的孩子成长为受人尊敬、负责任的成年人。但这些人格也希望自己的孩子意志坚强、能力强，而这只有在他们有机会做出自己的决定并有机会在父母的爱和支持下面对这些决定的后果（无论好坏）时才会发生。</font
+                      ></font
+                    >
+                  </p>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >诚信的基础</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >他们可能会面临挑战，因为他们的孩子要学会在日益增长的独立欲望与尊重和遵守父母要求他们履行的职责之间取得平衡，但
+                        ESTJ
+                        人格类型的人确实具有明显的优势，即始终如一和直言不讳，他们的期望从不模棱两可。这可能是一个艰巨的任务，但他们的孩子总是知道自己需要做什么，而且大多数人会认可和欣赏父母作为回报所付出的奉献和辛勤工作。</font
+                      ></font
+                    >
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >对于 ESTJ
+                        人格类型（高管）的人来说，职业道路通常和他们本人一样清晰明了。虽然他们可以选择的方向很多，但他们几乎总是有机会锻炼他们对组织、结构和后续行动的亲和力。ESTJ
+                        更加注重细节，他们非常尊重传统、稳定和安全——这些品质有助于他们沿着清晰的道路前进，提高责任感和可靠性。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="scene">
+                    <img
+                      style="display: none"
+                      alt="ESTJ（执行官）职业"
+                      src="/scene/sentinels_Executive_ESTJ_career_path.svg"
+                    />
+                  </div>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ESTJ
+                        性格的人能够应对挑战，并以令人羡慕的一致性履行其义务，使他们成为晋升的明确选择。</font
+                      ></font
+                    >
+                  </div>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >成功的关键特质</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ESTJ
+                        的忠诚感往往使他们尽可能长时间地为同一雇主工作，而他们对既定机构的崇敬往往使他们与受人尊敬的组织合作。执法部门、军队、医院和知名律师事务所都能够认可他们多年的服务。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ESTJ
+                        人格类型的人是模范公民的形象，他们努力在整个职业生涯中保持这一理想形象。这也有助于他们晋升为管理层——这些强大的人具有许多与生俱来的领导特质，无论他们选择哪个行业，这一点通常都会得到认可。从他们在组织他人时感受到的真正乐趣，到他们清楚地表达原则、价值观和期望的诀窍，ESTJ
+                        都是非常有效的管理者。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ESTJ
+                        拥有出色的能力，能够驾驭需要耐心和细心的项目。由于他们有条不紊的工作方式，他们也往往擅长处理需要多任务的工作。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >作为令人生畏的领导者，ESTJ
+                        人格类型的人厌恶混乱、无能、懒惰，尤其是不诚实，当这些价值观受到违背时，他们会毫不犹豫地表达自己的不满。但只要每个人都遵守规则，ESTJ
+                        就会非常高效。他们热爱结构和彻底性，会留下准确、完整、按时、按预算完成的工作记录，这使他们成为天生的审计师、财务主管和业务管理员。</font
+                      ></font
+                    >
+                  </p>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >勤奋的价值</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >勤奋和自我激励也是 ESTJ
+                        的强项，这使他们成为优秀的销售代表，无论是担任基础零售职位、作为办公室团队的一员，还是作为独立代理。具有这种性格类型的人会坚持完成项目，无论项目大小，他们组织能力很强，可以让任何必要的文书工作对客户来说都只是小小的不便，而不是某种令人困惑的折磨。这些品质结合在一起，使他们保持成就感所需的明确晋升步骤不仅可行，而且几乎是不可避免的。</font
+                      ></font
+                    >
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e=""></div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >很少有人格类型像
+                        ESTJ（高管）一样务实且意志坚定。他们以可靠性和管理技能而闻名，擅长为自己和亲人创造和维持安全稳定的环境。他们的奉献精神在许多领域都是无价的，包括他们自己的个人成长。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >然而，ESTJ
+                        很容易在某些方面犯错，因为他们的理性和务实态度更多的是一种负担而不是一种优点。无论是寻找（或留住）伴侣、学会放松或即兴发挥、在职业阶梯上达到令人眼花缭乱的高度，还是管理他们的工作量，ESTJ
+                        都需要有意识地努力发展他们的弱点和额外技能。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="scene">
+                    <img
+                      style="display: none"
+                      alt="ESTJ（执行型）人格"
+                      src="/scene/sentinels_Executive_ESTJ_conclusion.svg"
+                    />
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >到目前为止，您读到的只是对 ESTJ
+                        人格类型这一复杂概念的介绍。您可能会喃喃自语：“哇，这太准确了，有点令人毛骨悚然”或“终于有人理解我了！”您甚至可能会问：“他们怎么比我最亲近的人更了解我？”</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >这不是诡计。你感觉被理解是因为你确实被理解了。我们研究了
+                        ESTJ
+                        的思维方式以及他们需要什么才能充分发挥他们的潜力。不，我们并没有监视你——你所面临的和未来将要面临的许多挑战已经被其他
+                        ESTJ 克服了。你只需要学习他们是如何成功的。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >但为了做到这一点，你需要有一个计划，一个个人路线图。如果你不知道自己想去哪里，即使是世界上最好的汽车也无法带你到正确的地方。我们已经告诉你
+                        ESTJ
+                        在某些情况下会如何表现，以及他们的主要优势和劣势是什么。现在我们需要更深入地了解你的性格类型，并回答“为什么”、“如何”和“如果”的问题。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >这些知识只是终生旅程的开始。你准备好了解 ESTJ
+                        性格的人为什么会这样做了吗？是什么激励和启发了你？你害怕什么，你暗暗梦想着什么？你如何释放自己真正的、非凡的潜力？</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >我们的高级行政套房为您提供了通往更快乐、更成功、更全面的您的路线图！但它并不适合所有人——您需要愿意并能够挑战自己，超越显而易见的事物，想象并遵循自己的道路，而不是随波逐流。如果您想自己掌控一切，我们会帮助您。</font
+                      ></font
+                    >
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <!--]-->
+            </div>
+          </div>
+        </div>
+      </main>
+      <!--]-->
+    </div>
+
+    <script
+      async=""
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7002319867557344"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google tag (gtag.js) -->
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PRSXQ5TQJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'G-3PRSXQ5TQJ')
+    </script> 
+    -->
+
+    <!-- Baidu Tongji -->
+    <!-- 
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?6e338f57d51465d49b34a3fa8fd2e533";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script> 
+    -->
+  </body>
+</html>

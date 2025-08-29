@@ -1,0 +1,731 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="/icons/apple-touch-icon.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESTP | MBTI | 性格测试 | 十六人格</title>
+    <meta
+      name="keywords"
+      content="MBTI,16personalities,测试性格,免费性格测试,十六人格,九型人格测试,职业性格测试,工作规划,职业发展,恋爱,三观,人格,内向,外向,INFP,INTJ,INTP,ISTJ,INFJ,ENTP,ENFP,ISFJ,ISFP,ENTJ,ISTP,ESFP,ESTJ,ESTP,ESFJ,ENFJ"
+    />
+    <meta
+      name="description"
+      content="超过200万用户选择的职业性格及人才测评平台,提供权威、准确的MBTI十六型人格性格测试及海量相关内容,帮助您找到最合适的职业和人生方向"
+    />
+    <script
+      defer=""
+      src="https://hm.baidu.com/hm.js?6e338f57d51465d49b34a3fa8fd2e533"
+    ></script>
+    <link rel="dns-prefetch" href="https://s.one-quant.com" />
+    <link rel="dns-prefetch" href="http://tcb-api.tencentcloudapi.com" />
+    <script
+      type="module"
+      async=""
+      crossorigin=""
+      src="/assets/app-Ba0Wni1V.js"
+    ></script>
+    <link rel="stylesheet" crossorigin="" href="/assets/B2XaiBzU.css" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script>
+    <link rel="modulepreload" crossorigin="" href="/assets/Ceo1e4fE.js" />
+    <link rel="stylesheet" href="/assets/y62ks7c4.css" />
+  </head>
+
+  <body>
+    <div id="app" data-server-rendered="true">
+      <!--[-->
+      <main data-v-e26d0c9e="">
+        <header data-v-e26d0c9e="" data-v-85a67040="">
+          <ul
+            role="menubar"
+            style="--el-menu-level: 0"
+            class="el-menu el-menu--horizontal menu"
+            data-v-85a67040=""
+          >
+            <li
+              class="el-menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[--><img
+                height="45px"
+                src="data:image/png;base64,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"
+                data-v-85a67040=""
+              /><!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <div class="flex-grow" data-v-85a67040=""></div>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[-->MBTI<!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[-->性格类型<!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[-->性格测试<!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[-->测试结果<!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[--><a
+                href="https://answer-book.com"
+                target="_blank"
+                data-v-85a67040=""
+                >答案之书</a
+              ><!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[--><!--]--><!--[--><!--]--><!--]-->
+            </li>
+          </ul>
+          <!--teleport start-->
+          <div
+            class="el-overlay menu-drawer-overlay"
+            style="z-index: 3018; display: none"
+          >
+            <!--[--><!--[-->
+            <div
+              aria-modal="true"
+              aria-labelledby="el-id-3183-34"
+              aria-describedby="el-id-3183-35"
+              class="menu-drawer el-drawer rtl"
+              style="width: 30%"
+              role="dialog"
+            >
+              <span class="el-drawer__sr-focus" tabindex="-1"></span>
+              <header class="el-drawer__header">
+                <!--[-->
+                <div class="menu-drawer-header" data-v-85a67040="">
+                  <img
+                    src="data:image/svg+xml,%3csvg%20t='1750684389471'%20fill='%2388619a'%20class='icon'%20viewBox='0%200%201024%201024'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20p-id='19915'%20width='200'%20height='200'%3e%3cpath%20d='M109.4%2066.8c27-8.2%2056.2%202.2%2071.8%2025.8l330.8%20496L842.8%2092.4c15.6-23.4%2044.8-34%2071.8-25.8S960%2099.8%20960%20128v768c0%2035.4-28.6%2064-64%2064s-64-28.6-64-64V339.4L565.2%20739.6c-11.8%2017.8-31.8%2028.4-53.2%2028.4s-41.4-10.6-53.2-28.4L192%20339.4V896c0%2035.4-28.6%2064-64%2064S64%20931.4%2064%20896V128c0-28.2%2018.4-53%2045.4-61.2z'%20fill='%2388619a'%20p-id='19916'%3e%3c/path%3e%3c/svg%3e"
+                    width="35"
+                    style="margin-right: 10px"
+                    data-v-85a67040=""
+                  />
+                  <div class="brand" data-v-85a67040="">
+                    <span data-v-85a67040="">更好的了解你自己</span>
+                    <h3 data-v-85a67040="">MBTI 性格测试</h3>
+                  </div>
+                </div>
+                <!--]--><button
+                  aria-label="Close this dialog"
+                  class="el-drawer__close-btn"
+                  type="button"
+                >
+                  <i class="el-icon el-drawer__close" style=""
+                    ><!--[--><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 1024 1024"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z"
+                      ></path></svg
+                    ><!--]--></i
+                  >
+                </button>
+              </header>
+              <!--v-if--><!--v-if-->
+            </div>
+            <!--]--><!--]-->
+          </div>
+          <!--teleport end--><svg
+            class="menu-icon"
+            viewBox="0 0 48 48"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            data-v-85a67040=""
+          >
+            <path
+              fill="#88619a"
+              d="M44.438 10.688H3.562A.564.564 0 0 1 3 10.124v-2.25c0-.31.253-.563.563-.563h40.874c.31 0 .563.254.563.563v2.25c0 .31-.253.563-.563.563zm0 15H3.562A.564.564 0 0 1 3 25.125v-2.25c0-.31.253-.563.563-.563h40.874c.31 0 .563.254.563.563v2.25c0 .31-.253.563-.563.563zm0 15H3.562A.564.564 0 0 1 3 40.124v-2.25c0-.31.253-.563.563-.563h40.874c.31 0 .563.254.563.563v2.25c0 .31-.253.563-.563.563z"
+              data-v-85a67040=""
+            ></path>
+          </svg>
+        </header>
+        <div
+          class="container"
+          style="background: #e4ae3a"
+          data-v-e26d0c9e=""
+          data-v-32bf60fe=""
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1920 60"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+            class="wave-shape"
+            style="background: #e4ae3a"
+            data-v-32bf60fe=""
+          >
+            <path
+              d="m0 20 420 40L800 0l750 60 370-45V0H0z"
+              fill="#fff"
+              data-v-32bf60fe=""
+            ></path></svg
+          ><!--[-->
+          <div class="content" data-v-e26d0c9e="">
+            <div
+              class="type-info"
+              style="background: #e4ae3a"
+              data-v-e26d0c9e=""
+            >
+              <h1 data-v-e26d0c9e="">企业家</h1>
+              <h3 data-v-e26d0c9e="">ESTP性格-e人</h3>
+              <p data-v-e26d0c9e="">
+                企业家精明、精力充沛并且洞察力极强，真正喜欢充满刺激和危险的生活。
+              </p>
+            </div>
+            <div class="type-img" data-v-e26d0c9e=""></div>
+            <div class="clear" data-v-e26d0c9e=""></div>
+          </div>
+          <!--]-->
+          <div class="bg bg-desktop" data-v-32bf60fe=""><!--[--><!--]--></div>
+          <div class="bg bg-mobile" data-v-32bf60fe=""><!--[--><!--]--></div>
+        </div>
+        <!---->
+        <div class="article mbti-container" data-v-e26d0c9e="">
+          <h1 data-v-e26d0c9e="">企业家</h1>
+          <div class="el-tabs el-tabs--right tabs" data-v-e26d0c9e="">
+            <div class="el-tabs__header el-tabs__header-vertical is-right">
+              <div class="el-tabs__nav-wrap is-right">
+                <!---->
+                <div class="el-tabs__nav-scroll">
+                  <div
+                    class="el-tabs__nav is-right"
+                    style="transform: translateY(-0px)"
+                    role="tablist"
+                  >
+                    <div class="el-tabs__active-bar is-right" style=""></div>
+                    <!--[--><!--]-->
+                  </div>
+                </div>
+              </div>
+              <!---->
+            </div>
+            <div class="el-tabs__content">
+              <!--[-->
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <blockquote>
+                    <p>生活要么是一次大胆的冒险，要么什么都没有。</p>
+                    <footer>海伦·凯勒</footer>
+                  </blockquote>
+                  <p>
+                    企业家总是对他们周围的环境产生影响--在聚会上发现他们的最好方法是寻找由于他们在人群之间移动时形成人流的漩涡。欢声笑语、娱乐性十足的企业家以一种质朴的幽默，喜欢成为众人关注的焦点。如果要求听众上台，企业家会自愿参加--或者自愿给一个害羞的朋友当志愿者。
+                  </p>
+                  <p>
+                    关于全球问题及其影响的理论、抽象概念和令人费解的讨论不会让企业家长时间感兴趣。企业家们保持他们的谈话充满活力、充满智慧，但他们喜欢谈论是什么的问题--或者更进一步，出去做这件事。企业家在他们看到之前就跃跃欲试，边走边修正自己的错误，而不是闲着，准备突发事件和应急规避条款。
+                  </p>
+
+                  <h2>立即投入</h2>
+                  <p>
+                    企业家是最有可能是以冒险行动为主导的生活方式的人格类型。他们活在当下，并会立即投入--他们是风暴的焦点。企业家性格类型的人喜欢复杂的剧情、激情和快乐，不是因为情感上的兴奋，而是因为这会让他们的逻辑思维兴趣盎然。在快速的理性刺激反应过程中，他们被迫根据事实、直接的现实做出关键决定。
+                  </p>
+                  <p>
+                    这使得学校和其他高度组织化的环境对企业家来说是一个挑战。当然不是因为他们不聪明，他们可以做得很好，但是正规教育的有条理的讲课方法离企业家喜欢的动手学习相距甚远。要将此过程视为实现目标的必要手段，需要很高的成熟度，这会创造更多令人兴奋的机会。
+                  </p>
+                  <p>
+                    同样具有挑战性的是，对于企业家来说，使用自己的道德指南针比其他人的道德指南针更有意义。规则本来就是要被打破的。很少有高中教师或公司主管会认同这种观点，并且这些观点可能让人们对企业家人士产生一些看法。但是，如果他们最大程度地减少制造麻烦，利用自己的精力并专注于事物本身，那么企业家就是一支不可忽视的力量。
+                  </p>
+                  <h2>少走弯路</h2>
+                  <p>
+                    也许是最敏锐、最不过滤视角的性格类型，企业家在注意到微小变化方面具有独特的技能。从面部表情的转变，新的服装风格，或旧有习惯的打破，这种性格类型的人都会察觉到隐藏的思想和动机，而大多数类型的人都很难察觉任何特定的东西。企业家会立即使用这些观察结果，大声疾呼改革并提出问题，通常很少考虑敏感性。企业家应该记住，并不是每个人都希望自己的秘密和决定得到传播。
+                  </p>
+                  <div class="description-pullout">
+                    有时，企业家的即时观察和行动正是所需要的，例如在某些公司环境中，尤其是在紧急情况下。
+                  </div>
+                  <p>
+                    但是，如果企业家不小心，他们可能会陷入困境，走得太远，对更敏感的人粗暴对待，或者忘记照顾自己的健康和安全。企业家仅占人口的4%，对于保持敏锐和高度的竞争力已足够，同时不会造成系统性风险。
+                  </p>
+                  <p>
+                    企业家充满激情和活力，辅之以理性的，有时是千头万绪的头脑。鼓舞人心，令人信服，丰富多彩，他们是天生的团体领袖，一路上引导每个人少走弯路，无论走到哪里都带来生机和兴奋。将这些品质用于建设性和有益的目的是企业家真正的挑战。
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e=""></div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e=""></div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >具有 ESTP
+                        人格类型（企业家）的人几乎可以用他们充满活力的性格为任何聚会增添活力——识别他们的最佳方法是寻找在他们从一个群体移动到另一个群体时周围飞来飞去的人群。他们喜欢笑着娱乐，用直率而朴实的幽默来娱乐，他们喜欢成为关注的焦点。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ESTP
+                        性格的人拥有令人羡慕的想象力和令人振奋的自发性，这往往让人们保持警惕。他们喜欢探索有趣的想法，无论是在讨论中还是通过外出亲眼观察，这意味着
+                        ESTP
+                        似乎总是有一些有趣的活动隐藏在袖子里。同时，他们随和、宽容、迷人，这让他们自然而然地很受欢迎。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ESTP
+                        通常是任何社交聚会的焦点。他们富有魅力的故事讲述和对生活的热情创造了一种大多数人难以抗拒的感染力。</font
+                      ></font
+                    >
+                  </div>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >对生活的热情</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ESTP
+                        认为动手能力强、精力充沛的活动（如团队运动和音乐会）很有趣，这些环境为他们提供了结交新朋友的大量机会。对他们来说，这没什么困难——他们似乎能与几乎每个人相处融洽，无论走到哪里都能结交新朋友。ESTP
+                        活在当下，作为天生自信的性格类型，他们不太担心别人对他们的看法。这吸引了与他们有着相同态度和生活热情的朋友。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="scene">
+                    <img
+                      style="display: none"
+                      alt="ESTP（企业家）朋友"
+                      src="/scene/explorers_Entrepreneur_ESTP_friendships.svg"
+                    />
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >虽然 ESTP
+                        不反对长时间的哲学讨论，而且经常享受智力锻炼，但他们不太可能发展仅仅基于一对一讨论全球经济挑战或宗教在政治中的作用的友谊。这种性格类型的人直言不讳，直言不讳，在辩论中诚实的意见是肯定的。但在内心深处，ESTP
+                        是行动派，他们更喜欢做可以做的事情，而不是谈论将来可能发生的事情。</font
+                      ></font
+                    >
+                  </p>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >冒险等待着你</font
+                      ></font
+                    >
+                  </h2>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >无所事事，尤其是无聊的时候，是 ESTP 存在的祸根。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >探索、兴奋、肾上腺素和风险——ESTP
+                        的朋友应该为所有这些事情做好准备。他们通常很乐意为人群表演，但他们也倾向于鼓励朋友加入。大多数人格类型可能会把“谢谢，但不必了”当做针对他们自己，但
+                        ESTP
+                        对自己的身份很满意，他们更有可能只是耸耸肩，继续和生活中喜欢冒险的朋友在一起。</font
+                      ></font
+                    >
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >在很多方面，具有 ESTP
+                        人格类型（企业家）的人是许多孩子认为的完美父母。ESTP
+                        爱好玩乐、灵活且善解人意，他们真正享受与孩子共度时光，并且知道如何确保每个人都玩得开心。他们天生好奇心强、自发性强，与小孩子的好奇心和永不满足的学习欲望完美匹配。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ESTP 倾向于认为他们的养育方式比他们父母的更随和。</font
+                      ></font
+                    >
+                  </div>
+                  <div class="scene">
+                    <img
+                      style="display: none"
+                      alt="ESTP（企业家）父母"
+                      src="/scene/explorers_Entrepreneur_ESTP_parenthood.svg"
+                    />
+                  </div>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >自由探索</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ESTP
+                        喜欢动手活动。这意味着他们的孩子通常不必站在那里等待别人和他们一起玩接球或帮助他们为学校搭建模型。运动、徒步旅行和其他实际的动手爱好都受到欢迎和鼓励。同时，鉴于他们自己厌恶规则和时间表，ESTP
+                        人格不太可能强迫他们的孩子加入不同类型的俱乐部和团队。如果他们的孩子想打垒球，那很好——如果不想，那么，他们就会找别的事情做。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ESTP
+                        给予孩子自由。他们鼓励孩子运用自己的判断力（尤其是小事），听从自己的内心，而不必在意别人的想法。这些性格的人密切关注着自己的孩子，利用这种本领来察觉别人情绪和习惯的细微变化，当事情开始出错时，他们可以介入并提供额外的指导。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >也许 ESTP
+                        父母最伟大的一点就是他们将孩子视为家庭中平等的成员。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >不过，ESTP
+                        型人格确实面临一个重大的育儿挑战：情感往往被视为一种不合理的干扰，而不是表达和联系的工具。如果他们的孩子恰好比较敏感，这可能会成为这些父母与孩子之间紧张关系的根源。坦率的诚实并不总是解决孩子发脾气或青少年关系问题的最佳方法。</font
+                      ></font
+                    >
+                  </p>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >注重连接</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >尽管如此，ESTP
+                        型人格者经常发现，为人父母会给予他们所有动力，让他们努力提高自己的敏感性和情感协调能力。通过共同的活动和经历，这些父母可以与孩子建立健康、真诚的联系，更深入地了解孩子独特的需求、梦想和处世方式。具有
+                        ESTP
+                        人格类型的人还具有直接和理解的关系的额外优势——他们的孩子不会觉得他们必须隐藏自己的错误和挑战，这是亲子沟通的典范。</font
+                      ></font
+                    >
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >对于 ESTP
+                        人格类型（企业家）的职业选择，“行动”是当今的流行词。他们思维敏捷，善于在关键时刻快速做出决定。同时，他们也是和蔼可亲的人，无论走到哪里都能结交朋友和建立联系。在职场中，人气和稳固的人脉关系是一笔巨大的财富，ESTP
+                        可以毫无顾忌地利用这些人际交往技能来为自己谋利。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="scene">
+                    <img
+                      style="display: none"
+                      alt="ESTP（企业家）职业"
+                      src="/scene/explorers_Entrepreneur_ESTP_career_path.svg"
+                    />
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >这种社交智力，加上他们天生的大胆和即兴发挥的技巧，使得销售、商业谈判、营销甚至表演——任何紧张、竞争激烈的环境——都非常适合
+                        ESTP。这些性格的人相信自己能做出正确的决定。无论大小风险都是生活的一部分，他们不会坐等高层领导告诉他们该怎么做。这可能会让
+                        ESTP
+                        陷入困境，但通常这正是他们所需要的，并且同样可以提升他们的职业阶梯。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >很难想象 ESTP
+                        会选择安全但无趣的工作，而不是不太稳定但更令人兴奋的职业。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >限制、规则、高度结构化的环境——这些都是让这种性格类型的人发疯的好方法。ESTP
+                        按照自己的方式生活，这使他们成为出色的商人和自由职业者。这些角色还允许他们将工作中更繁琐的部分——会计、细致的研究等等——委托给更适合的人。但是，尽管
+                        ESTP
+                        更喜欢让他们自由决定自己日程安排的职位，但他们不太可能喜欢每天都在家工作。他们更喜欢在工作中与其他人在一起。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ESTP
+                        是好奇心强、精力充沛、喜欢行动的人。有些人负责分析和管理公共安全资源分配的后勤工作，有些人负责驾驶救护车、在街道上巡逻，并亲手拯救生命——他们属于后者。他们观察力极强，但又不耐烦，这使他们能够一眼就看清整个情况，然后采取行动。任何应急响应角色都非常适合
+                        ESTP 人格，无论是护理人员、警察还是士兵。</font
+                      ></font
+                    >
+                  </p>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >游戏的刺激</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >这种活在当下、渴望立即获得成果的品质很好地体现在另一个领域：体育。竞争的刺激，将自己推向体能极限，只为赢得胜利而再加一分，对于
+                        ESTP
+                        来说，是无与伦比的。无论他们是作为运动员在赛场上，在场边指导，还是在高处评论，具有
+                        ESTP
+                        人格类型的人都陶醉于精心磨练的团队合作和执行良好的计划，这些职位中的任何一个对他们来说都是一份很好的工作。</font
+                      ></font
+                    >
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e=""></div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >很少有人格类型像
+                        ESTP（企业家）一样迷人和有吸引力。他们以即兴发挥和完全专注于当下的能力而闻名，善于寻找令人兴奋的新事物来探索和体验。ESTP
+                        的创造力和脚踏实地的态度在许多领域都是无价的，包括他们自己的个人成长。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="scene">
+                    <img
+                      style="display: none"
+                      alt="ESTP（企业家）性格"
+                      src="/scene/explorers_Entrepreneur_ESTP_conclusion.svg"
+                    />
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >然而，ESTP
+                        性格的人很容易在以下情况下陷入困境：他们对实际问题的关注更多的是一种负担，而不是一种资产。无论是寻找（或留住）伴侣、在职业阶梯上达到令人眼花缭乱的高度，还是学会提前计划，ESTP
+                        都需要有意识地努力发展他们的弱点和额外技能。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >到目前为止，您读到的只是对 ESTP
+                        人格类型的复杂概念的介绍。您可能会喃喃自语：“哇，这太准确了，有点令人毛骨悚然”或“终于有人理解我了！”您甚至可能会问：“他们怎么比我最亲近的人更了解我？”</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >这不是诡计。你感觉被理解是因为你确实被理解了。我们研究了具有
+                        ESTP
+                        人格类型的人如何思考以及他们需要什么才能充分发挥他们的潜力。不，我们没有监视你——你所面临的和未来将要面临的许多挑战已经被其他
+                        ESTP 克服了。你只需要学习他们是如何成功的。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >但为了做到这一点，你需要有一个计划，一个个人路线图。如果你不知道自己想去哪里，即使是世界上最好的汽车也无法带你到正确的地方。我们已经告诉你
+                        ESTP
+                        在某些情况下会如何表现，以及他们的主要优势和劣势是什么。现在我们需要更深入地了解你的性格类型，并回答“为什么”、“如何”和“如果”的问题。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >这些知识只是终生旅程的开始。你准备好了解 ESTP
+                        性格的人为什么会这样做了吗？是什么激励和启发了你？你害怕什么，你暗暗梦想着什么？你如何释放自己真正的、非凡的潜力？</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >我们的高级企业家套件为您提供了一份路线图，让您变得更快乐、更成功、更灵活。不过，它并不适合所有人——您需要愿意并能够挑战自己，超越显而易见的事物，想象并走自己的路，而不是随波逐流。如果您想自己掌控一切，我们会帮助您。</font
+                      ></font
+                    >
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <!--]-->
+            </div>
+          </div>
+        </div>
+      </main>
+      <!--]-->
+    </div>
+
+    <script
+      async=""
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7002319867557344"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google tag (gtag.js) -->
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PRSXQ5TQJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'G-3PRSXQ5TQJ')
+    </script> 
+    -->
+
+    <!-- Baidu Tongji -->
+    <!-- 
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?6e338f57d51465d49b34a3fa8fd2e533";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script> 
+    -->
+  </body>
+</html>

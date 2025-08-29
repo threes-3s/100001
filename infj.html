@@ -1,0 +1,902 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="/icons/apple-touch-icon.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INFJ | MBTI | 性格测试 | 十六人格</title>
+    <meta
+      name="keywords"
+      content="MBTI,16personalities,测试性格,免费性格测试,十六人格,九型人格测试,职业性格测试,工作规划,职业发展,恋爱,三观,人格,内向,外向,INFP,INTJ,INTP,ISTJ,INFJ,ENTP,ENFP,ISFJ,ISFP,ENTJ,ISTP,ESFP,ESTJ,ESTP,ESFJ,ENFJ"
+    />
+    <meta
+      name="description"
+      content="超过200万用户选择的职业性格及人才测评平台,提供权威、准确的MBTI十六型人格性格测试及海量相关内容,帮助您找到最合适的职业和人生方向"
+    />
+    <script
+      defer=""
+      src="https://hm.baidu.com/hm.js?6e338f57d51465d49b34a3fa8fd2e533"
+    ></script>
+    <link rel="dns-prefetch" href="https://s.one-quant.com" />
+    <link rel="dns-prefetch" href="http://tcb-api.tencentcloudapi.com" />
+    <script
+      type="module"
+      async=""
+      crossorigin=""
+      src="/assets/app-Ba0Wni1V.js"
+    ></script>
+    <link rel="stylesheet" crossorigin="" href="/assets/B2XaiBzU.css" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script>
+    <link rel="modulepreload" crossorigin="" href="/assets/Ceo1e4fE.js" />
+    <link rel="stylesheet" href="/assets/y62ks7c4.css" />
+  </head>
+
+  <body>
+    <div id="app" data-server-rendered="true">
+      <!--[-->
+      <main data-v-e26d0c9e="">
+        <header data-v-e26d0c9e="" data-v-85a67040="">
+          <ul
+            role="menubar"
+            style="--el-menu-level: 0"
+            class="el-menu el-menu--horizontal menu"
+            data-v-85a67040=""
+          >
+            <li
+              class="el-menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[--><img
+                height="45px"
+                src="data:image/png;base64,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"
+                data-v-85a67040=""
+              /><!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <div class="flex-grow" data-v-85a67040=""></div>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[-->MBTI<!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[-->性格类型<!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[-->性格测试<!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[-->测试结果<!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[--><a
+                href="https://answer-book.com"
+                target="_blank"
+                data-v-85a67040=""
+                >答案之书</a
+              ><!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[--><!--]--><!--[--><!--]--><!--]-->
+            </li>
+          </ul>
+          <!--teleport start-->
+          <div
+            class="el-overlay menu-drawer-overlay"
+            style="z-index: 3008; display: none"
+          >
+            <!--[--><!--[-->
+            <div
+              aria-modal="true"
+              aria-labelledby="el-id-3183-14"
+              aria-describedby="el-id-3183-15"
+              class="menu-drawer el-drawer rtl"
+              style="width: 30%"
+              role="dialog"
+            >
+              <span class="el-drawer__sr-focus" tabindex="-1"></span>
+              <header class="el-drawer__header">
+                <!--[-->
+                <div class="menu-drawer-header" data-v-85a67040="">
+                  <img
+                    src="data:image/svg+xml,%3csvg%20t='1750684389471'%20fill='%2388619a'%20class='icon'%20viewBox='0%200%201024%201024'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20p-id='19915'%20width='200'%20height='200'%3e%3cpath%20d='M109.4%2066.8c27-8.2%2056.2%202.2%2071.8%2025.8l330.8%20496L842.8%2092.4c15.6-23.4%2044.8-34%2071.8-25.8S960%2099.8%20960%20128v768c0%2035.4-28.6%2064-64%2064s-64-28.6-64-64V339.4L565.2%20739.6c-11.8%2017.8-31.8%2028.4-53.2%2028.4s-41.4-10.6-53.2-28.4L192%20339.4V896c0%2035.4-28.6%2064-64%2064S64%20931.4%2064%20896V128c0-28.2%2018.4-53%2045.4-61.2z'%20fill='%2388619a'%20p-id='19916'%3e%3c/path%3e%3c/svg%3e"
+                    width="35"
+                    style="margin-right: 10px"
+                    data-v-85a67040=""
+                  />
+                  <div class="brand" data-v-85a67040="">
+                    <span data-v-85a67040="">更好的了解你自己</span>
+                    <h3 data-v-85a67040="">MBTI 性格测试</h3>
+                  </div>
+                </div>
+                <!--]--><button
+                  aria-label="Close this dialog"
+                  class="el-drawer__close-btn"
+                  type="button"
+                >
+                  <i class="el-icon el-drawer__close" style=""
+                    ><!--[--><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 1024 1024"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z"
+                      ></path></svg
+                    ><!--]--></i
+                  >
+                </button>
+              </header>
+              <!--v-if--><!--v-if-->
+            </div>
+            <!--]--><!--]-->
+          </div>
+          <!--teleport end--><svg
+            class="menu-icon"
+            viewBox="0 0 48 48"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            data-v-85a67040=""
+          >
+            <path
+              fill="#88619a"
+              d="M44.438 10.688H3.562A.564.564 0 0 1 3 10.124v-2.25c0-.31.253-.563.563-.563h40.874c.31 0 .563.254.563.563v2.25c0 .31-.253.563-.563.563zm0 15H3.562A.564.564 0 0 1 3 25.125v-2.25c0-.31.253-.563.563-.563h40.874c.31 0 .563.254.563.563v2.25c0 .31-.253.563-.563.563zm0 15H3.562A.564.564 0 0 1 3 40.124v-2.25c0-.31.253-.563.563-.563h40.874c.31 0 .563.254.563.563v2.25c0 .31-.253.563-.563.563z"
+              data-v-85a67040=""
+            ></path>
+          </svg>
+        </header>
+        <div
+          class="container"
+          style="background: #33a474"
+          data-v-e26d0c9e=""
+          data-v-32bf60fe=""
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1920 60"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+            class="wave-shape"
+            style="background: #33a474"
+            data-v-32bf60fe=""
+          >
+            <path
+              d="m0 20 420 40L800 0l750 60 370-45V0H0z"
+              fill="#fff"
+              data-v-32bf60fe=""
+            ></path></svg
+          ><!--[-->
+          <div class="content" data-v-e26d0c9e="">
+            <div
+              class="type-info"
+              style="background: #33a474"
+              data-v-e26d0c9e=""
+            >
+              <h1 data-v-e26d0c9e="">提倡者</h1>
+              <h3 data-v-e26d0c9e="">INFJ性格-i人</h3>
+              <p data-v-e26d0c9e="">
+                倡导者是安静的有远见之人，通常是鼓舞人心且不知疲倦的理想主义者。
+              </p>
+            </div>
+            <div class="type-img" data-v-e26d0c9e=""></div>
+            <div class="clear" data-v-e26d0c9e=""></div>
+          </div>
+          <!--]-->
+          <div class="bg bg-desktop" data-v-32bf60fe=""><!--[--><!--]--></div>
+          <div class="bg bg-mobile" data-v-32bf60fe=""><!--[--><!--]--></div>
+        </div>
+        <!---->
+        <div class="article mbti-container" data-v-e26d0c9e="">
+          <h1 data-v-e26d0c9e="">提倡者</h1>
+          <div class="el-tabs el-tabs--right tabs" data-v-e26d0c9e="">
+            <div class="el-tabs__header el-tabs__header-vertical is-right">
+              <div class="el-tabs__nav-wrap is-right">
+                <!---->
+                <div class="el-tabs__nav-scroll">
+                  <div
+                    class="el-tabs__nav is-right"
+                    style="transform: translateY(-0px)"
+                    role="tablist"
+                  >
+                    <div class="el-tabs__active-bar is-right" style=""></div>
+                    <!--[--><!--]-->
+                  </div>
+                </div>
+              </div>
+              <!---->
+            </div>
+            <div class="el-tabs__content">
+              <!--[-->
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <blockquote>
+                    <p>
+                      对待人们就像对待他们应该成为的人一样，您可以帮助他们成为他们有能力成为的人。
+                    </p>
+                    <footer>约翰·沃尔夫冈·冯·歌德</footer>
+                  </blockquote>
+                  <p>
+                    倡导者可能是最稀有的人格类型，但他们肯定会在世界上留下自己的印记。他们理想主义、有原则，不满足于平平安安地度过一生--他们想要站起来，有所作为。对于倡导者来说，成功不是来自金钱或地位，而是来自寻求成就感，帮助他人，成为世界上一股向善的力量。
+                  </p>
+                  <p>
+                    他们有远大的目标和抱负，倡导者不应该被误认为是无所事事的梦想家。这种性格类型的人关心的是事情的本真，直到他们做了他们认为正确的事情，才会满足。他们对自己的价值观有着清醒的认识，他们在生活中兢兢业业，他们的目标是永远不会忽视真正重要的东西--不是根据其他人或整个社会，而是根据自己的智慧和直觉。
+                  </p>
+
+                  <h2>寻求目的</h2>
+                  <p>
+                    也许是因为他们的性格类型很不常见，倡导者往往会有一种与大多数人不同的感觉--无论他们是否意识到。由于他们丰富的内心生活和寻找生活目标的深沉而持久的渴望，他们并不总是与周围的人融为一体。这并不是说倡导者不能享受社会接纳或亲密关系--只是他们有时会感到被误解或与世界背道而驰。
+                  </p>
+                  <p>
+                    幸运的是，这种不合拍的感觉并没有削弱倡导者让世界变得更美好的承诺。倡导者受到不公正的困扰，他们通常更关心利他主义而不是个人利益。他们经常觉得有必要利用自己的长处--包括创造力、想象力和敏感度--来鼓舞他人，传播同理心。
+                  </p>
+                  <div class="description-pullout">
+                    没有什么能像改变别人的生活那样照亮倡导者。
+                  </div>
+                  <p>
+                    许多倡导者将帮助他人视为生活中的使命，他们一直在寻找介入并为正确的事情大声疾呼的方法。具有这种人格类型的人也渴望解决社会更深层次的问题，希望不公平和艰辛能够成为过去。然而，有时，倡导者可能会如此专注于自己的理想，以至于他们没有充分照顾自己--这种模式可能导致压力和倦怠。
+                  </p>
+                  <h2>与他人(和自己)联系</h2>
+                  <p>
+                    倡导者可能内向，但他们重视与他人的深厚、真实的关系。很少有事情会像真正认识另一个人一样给这些性格类型带来快乐--同时也为别人所理解。倡导者喜欢有意义的对话远远超过闲聊，他们倾向于以热情和敏感的方式进行交流。这种情感上的诚实和洞察力可以给周围的人留下深刻的印象。
+                  </p>
+                  <div class="description-pullout">
+                    只要有一些亲密的关系是真实的，就可以使倡导者的内心充满热情。
+                  </div>
+                  <p>
+                    倡导者深思熟虑并富有同情心，为他们的关系注入了大量的精力和关怀。这并不意味着他们总是会得到回报。倡导者往往以深思熟虑和谨慎的态度行事，当其他人没有意识到他们的良好意图时，这可能会让他们感到沮丧。结果，即使是建设性的批评也可能对这些个性特点的人产生难以置信的伤害。
+                  </p>
+                  <h2>个人使命</h2>
+                  <p>
+                    许多倡导者认为，他们的生活有一个独特的目标--一个他们来到地球上要完成的使命。对于具有这种个性类型的人来说，生活中最有意义的方面之一就是寻找这个目的--然后，一旦他们找到了这个目的，就努力做到这一点。
+                  </p>
+                  <p>
+                    当倡导者遇到不公平或不公正时，他们很少放弃--相反，他们会参考自己的直觉和同情心来找到解决方案。
+                    凭借他们与生俱来的平衡心灵和头脑的能力，倡导者天生就能纠正世界上的错误，无论是大是小。这些人只需要记住，当他们忙于照顾其他人的时候，他们需要偶尔停下来，照顾好自己。
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e=""></div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e=""></div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <blockquote>
+                    <p>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >我能为我的朋友做的最多的事就是做他的朋友。</font
+                        ></font
+                      >
+                    </p>
+                    <footer>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >亨利戴维梭罗</font
+                        ></font
+                      >
+                    </footer>
+                  </blockquote>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >INFJ
+                        人格类型（拥护者）的人很少满足于肤浅的友谊。当谈到社会满足感时，他们不会满足于与同事或同学的随意互动。INFJ
+                        人格渴望真实、有意义的友谊——这种友谊让他们可以分享自己的梦想、袒露自己的心声，并感受到被理解和接受。如果这意味着只有一两个知己，而不是一大群熟人，那就这样吧。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >虽然 INFJ
+                        在世人眼中可能显得安静或内敛，但这些性格的人在亲密朋友面前绝对会发光。没有什么比与志趣相投的人谈论他们的激情、兴趣和信仰更能给他们带来快乐或愉悦的了。具有这种性格类型的人喜欢独处的乐趣，但他们仍然觉得，在可以信任的朋友面前放下戒备、完全做回自己是一种解脱。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="scene">
+                    <img
+                      style="display: none"
+                      alt="INFJ（倡导者）朋友"
+                      src="/scene/diplomats_Advocate_INFJ_friendships.svg"
+                    />
+                  </div>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >寻找金子般的心</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >INFJ
+                        以期望很高而闻名——不仅对自己，对友谊也是如此。这份期望中，真实性位居首位。如果他们必须虚伪或降低自己的形象才能获得某人的认可，那么这个人可能不是他们最好的朋友。具有这种性格类型的人很难尊重自己不真实诚实的人。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >INFJ
+                        对友谊的另一个期望是相互支持和成长。一起玩很开心，但对于这些性格的人来说，这还不够。他们希望身边都是能激励他们学习、拓展和提高自己的朋友。对于
+                        INFJ
+                        来说，两个朋友加深联系的最可靠方法是帮助彼此在各自的人生使命上前进。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >在友谊中，INFJ
+                        不只是在寻找可以共度时光的人。他们希望找到一个灵魂伴侣——一个能与他们的激情和信念产生共鸣的人。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >对于许多人来说，这可能是一个艰巨的任务。INFJ
+                        型人格的人通常觉得很难找到他们想要的那种朋友——拥有相同理想价值观的朋友。因此，具有这种性格类型的人有时会担心他们需要满足于不太令人满意的友谊——否则就接受孤独。</font
+                      ></font
+                    >
+                  </p>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >忠诚与真实</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >幸运的是，他们完全有能力找到他们渴望结交的朋友——他们可能只需要投入额外的精力。当
+                        INFJ
+                        人格类型的人遇到志同道合的人时，他们所形成的纽带非常深刻和有意义，这使得寻找值得。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >INFJ
+                        应该记住，有时他们寻找的朋友可能就藏在他们并不十分了解的熟人中。这种人格类型以对他人的第一印象敏锐而闻名，但即使是他们也可能错过他们每天遇到的人的深层潜力。当他们给这些陌生人一个机会时，INFJ
+                        人格可能会发现他们拥有共同的价值观和态度，使他们在更深层次上相容。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >一旦找到真正的友谊，INFJ
+                        就会成为忠诚、体贴的伙伴。有时，他们甚至会对自己对朋友的忠诚和奉献之强烈感到惊讶。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >归根结底，要想成为 INFJ
+                        真正的朋友，唯一的办法就是真诚、诚实和真实。多年来，这些人可能最终只拥有少数真正的朋友，而不是一大群泛泛之交。但对于那些幸运的少数人来说，INFJ
+                        为他们心爱的人做出的牺牲几乎是无限的。</font
+                      ></font
+                    >
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <blockquote>
+                    <p>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >我的本能是保护我的孩子免受痛苦。但逆境往往能赋予我们性格和力量。</font
+                        ></font
+                      >
+                    </p>
+                    <footer>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >妮可·基德曼</font
+                        ></font
+                      >
+                    </footer>
+                  </blockquote>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >作为父母，具有 INFJ
+                        人格类型（拥护者）的人对自己关心的事情有着清晰的愿景：将孩子培养成独立、全面发展的优秀人。INFJ
+                        认真对待自己的责任，如果这些人格成为父母，他们会深入思考如何以积极的方式塑造孩子的生活和经历。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >为人父母并不容易，但很少有人认为它很容易。INFJ
+                        型人格的人知道，生活中许多最有价值的追求也是最具挑战性的——这种心态可以帮助他们在养育孩子的日常挣扎中保持快乐和满足感。在很多方面，养育孩子可以让
+                        INFJ
+                        型人格的人充分发挥他们的优势，包括创造力、同情心和对所爱之人的无比忠诚。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="scene">
+                    <img
+                      style="display: none"
+                      alt="INFJ（拥护者）父母"
+                      src="/scene/diplomats_Advocate_INFJ_parenthood.svg"
+                    />
+                  </div>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >INFJ
+                        型父母具有理想主义倾向，他们强烈希望向孩子灌输人道主义价值观。他们渴望培养出情商高、富有同情心、能为大众谋福利的人。</font
+                      ></font
+                    >
+                  </div>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >像我一样独一无二</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >INFJ
+                        型父母关爱孩子，忠诚不二，他们愿意为改善孩子的生活付出一切。但不要以为这种性格的父母是软弱的。事实上，INFJ
+                        型父母可能非常严格，因为他们对培养孩子长期性格的承诺很少被一时考虑所压倒。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >虽然他们在养育孩子方面有很多天赋，但必须注意的是，没有父母是完美的。有时，具有
+                        INFJ
+                        人格类型的人可能会对孩子抱有不切实际的标准，而这些标准并没有考虑到每个孩子的个性或发展阶段。例如，INFJ
+                        型父母可能希望他们的孩子能像他们期望的那样正直和诚实，只要他们的孩子表现出他们认为小气或不道德的行为，他们就会感到沮丧。或者，INFJ
+                        型人可能会鼓励他们的孩子变得独立、有创造力和独特，如果他们的孩子渴望外部指导或想坚持现状，他们会认为这是一种令人担忧的趋势。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >INFJ
+                        父母可能会无意识地将自己的大量信仰和价值观投射到孩子身上。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >对于孩子来说，所有这些期望都可能让人感到矛盾和无法实现。根据孩子的性格和发展阶段，这些期望可能根本无法实现。在青春期，孩子们可能会通过藐视这些标准或信奉与父母价值观相悖的信念来反抗。在这种情况下，INFJ
+                        可能会觉得他们的孩子在批评或拒绝他们——这对这种敏感的性格类型来说是一件伤人的事情。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >话虽如此，我们也要记住，INFJ
+                        型人格以同理心和理解力强而闻名。因此，尽管最初的误解可能会带来挑战，但他们天生就具有重新评估、调整和改进方法的能力。</font
+                      ></font
+                    >
+                  </p>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit">干得好</font></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >INFJ
+                        型人格者努力确保他们的孩子在成长过程中能够清楚地辨别是非。具有这种性格类型的父母鼓励他们的孩子为自己所信仰的事业而奋斗，并尽其所能做到最好。无论孩子多大，这些父母都能从帮助孩子学会忠于自己中找到极大的满足感和意义。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >最终，INFJ
+                        型父母倾向于意识到，如果他们的孩子表现得与他们预期的不同，这并不是失败的标志。相反，他们认为这是他们成功培养出有能力形成自己理想的人的标志。他们的孩子往往会欣赏他们成长过程中的独立和正直的结合——尤其是随着他们长大。</font
+                      ></font
+                    >
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <blockquote>
+                    <p>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >在追求美好、富有挑战性、冒险和不确定的事物时失败总比说“我不想尝试，因为我可能不会完全成功”要好。</font
+                        ></font
+                      >
+                    </p>
+                    <footer>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >吉米·卡特</font
+                        ></font
+                      >
+                    </footer>
+                  </blockquote>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >对于 INFJ
+                        人格类型（拥护者）的人来说，职业决策不受经济收益或地位等传统成功标准的指导，而是由他们的工作可能带来的有意义的联系和个人成就感所决定。这些人格渴望找到一份符合他们价值观和梦想的职业——一份让他们能够实现自己在这个世界上的独特使命的职业。对于
+                        INFJ
+                        来说，如果一份工作不能提供更深层次的目标感，那么无论薪水有多高，它都不会令人满意。好消息是，具有这种性格类型的人可以利用他们的创造力和决心在几乎任何领域找到适合自己需求的工作。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >事实上，INFJ
+                        很难决定哪种工作最适合他们，因为他们能够想象出太多的可能性。他们可能会看到六条截然不同的前进道路，每条道路都有自己的回报。这可能令人兴奋，但也会引起压力，因为只选择一条就意味着放弃许多其他道路。当他们最终决定走一条路而导致许多门关闭时，他们甚至可能会感到失落。但他们不必担心，因为一个人一生中可以有许多不同的道路、目标和工作。</font
+                      ></font
+                    >
+                  </p>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >寻找目的</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >对于这些利他主义的性格来说，帮助他人和与他人建立联系的工作可以带来极大的满足感。因此，许多
+                        INFJ
+                        倾向于从事咨询师、治疗师、心理学家、社会工作者、教师、瑜伽教练和精神领袖的工作，这并不奇怪。他们也可能喜欢服务行业的职位，因为这样他们就可以直接与客户互动并建立真正的关系。医疗保健领域的职业也是
+                        INFJ
+                        的有益选择，包括护理、物理或职业治疗、医学、营养学或针灸等更全面的职业。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="scene">
+                    <img
+                      style="display: none"
+                      alt="INFJ（倡导者）职业"
+                      src="/scene/diplomats_Advocate_INFJ_career_path.svg"
+                    />
+                  </div>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >INFJ
+                        型人格的人性格深刻而内省，他们喜欢从事能够从人性角度评估问题的职业，利用他们的同理心为面临困难或冲突的人提供安慰、理解和解决方案。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >INFJ
+                        通常是热情的沟通者，尽管有时表现得非常微妙。这解释了为什么他们经常被写作事业所吸引，创作了许多受欢迎的书籍、博客、故事、视频游戏和剧本。对于具有这种性格类型的人来说，以讲故事为生的机会简直就是梦想成真。其他
+                        INFJ
+                        可能会追求音乐、摄影、设计、插画或美术。即使这些艺术追求不是他们的主要工作，许多人也发现创造性的副业为他们想象中的主题和想法提供了一个急需的出口。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >非营利性工作场所，从博物馆到自然中心再到食品储藏室，也对
+                        INFJ
+                        具有特殊的吸引力。这些组织专注于服务社区而不是盈利，因此非常适合这些性格的人。但即使在以盈利为主要目的的工作场所，INFJ
+                        也能找到方法将他们的精力和创造力用于帮助他人。无论他们的名片上写着什么，他们的洞察力都可以让这些性格的人发现不寻常的模式并提出创新的解决方案，从而真正改变他人的生活。</font
+                      ></font
+                    >
+                  </p>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit">使命感</font></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >INFJ
+                        非常灵活，但有些工作环境可能会让他们感到不快。在那些几乎没有独立性和自主权的工作场所尤其如此，这些工作场所迫使员工遵守僵硬、重复的规程，而不考虑他们的个人需求或优势。具有这种性格类型的人还可能对残酷、竞争激烈的工作环境带来的批评和压力感到恼火。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >因此，许多 INFJ
+                        型人格寻求更灵活、更自主的职位，或者完全独立创业。他们可能还会发现在看似不同的专业领域之间建立桥梁是令人欣慰的，例如，通过撰写心理学文章或成为一名环境律师。这种混合职业可以为
+                        INFJ
+                        提供大量机会来发挥他们的创造力和对学习的热爱。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >INFJ
+                        往往会感到压抑，除非他们的工作允许他们自由地按照自己的良心、创造力和常识行事。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >事实上，具有这种性格类型的人可以在任何领域做得很好。然而，要想真正快乐，INFJ
+                        通常需要找到符合他们价值观并允许他们有一定的独立性的工作。他们渴望有机会与他们正在帮助的人一起学习和成长。当这种情况发生时，INFJ
+                        人格最终可能会觉得他们正在履行自己的人生使命，并在个人层面上为人类的福祉做出贡献。</font
+                      ></font
+                    >
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e=""></div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <blockquote>
+                    <p>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >最终，你的行为以及你对环境的反应揭示了你的性格。</font
+                        ></font
+                      >
+                    </p>
+                    <footer>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >凯特·布兰切特</font
+                        ></font
+                      >
+                    </footer>
+                  </blockquote>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >到目前为止，您阅读的内容只是对善良、富有创造力且极为罕见的
+                        INFJ
+                        人格类型（倡导者）的复杂性的介绍。一路上，您可能会喃喃自语：“哇，这太准确了，有点令人毛骨悚然”，或“终于有人理解我了！”您甚至可能会问：“他们怎么比我最亲近的人更了解我？”</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >如果你现在感觉被理解了，那是因为你确实被理解了。多年的研究让我们深入了解了像你这样的
+                        INFJ
+                        的独特优势和挑战。我们了解你的创造力、你的热情和你做正确事情的承诺，但我们也了解你性格类型的阴暗面：你一直担心自己可能无法充分发挥潜力，无法充分利用你那狂野而宝贵的一生。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="scene">
+                    <img
+                      style="display: none"
+                      alt="INFJ（拥护者）人格"
+                      src="/scene/diplomats_Advocate_INFJ_conclusion.svg"
+                    />
+                  </div>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >INFJ
+                        的天赋包括理想主义、决心和展望美好未来的能力——但他们不只是想听到是什么让他们变得伟大。INFJ
+                        人格致力于真正利用这些天赋成为更好的人，并在这个世界上实现更伟大的目标。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <strong
+                      ><font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >这就是为什么我们将帮助像你这样的 INFJ
+                          不仅欣赏自己的天赋，而且充分</font
+                        ></font
+                      ><em
+                        ><font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit"
+                            >利用它们作为我们的</font
+                          ></font
+                        ></em
+                      ><font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >使命。</font
+                        ></font
+                      ></strong
+                    ><font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >了解你的性格类型很有趣，但它还有更深层次的目的——因为自我理解可以帮助你确保你不会错过你来到这个世界上要做的事情。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >因此，我们想问您一个问题，INFJ：您准备好充分利用自己独特的优势了吗？释放您真正的、非凡的潜力了吗？如果是的话，您的高级倡导者套件将让您对自己的个性、人际关系、职业道路</font
+                      ></font
+                    ><em
+                      ><font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit">和</font></font
+                      ></em
+                    ><font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >人生使命有新的认识。这是一生的旅程——您将在进入下一节时找到开始所需的一切。</font
+                      ></font
+                    >
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <!--]-->
+            </div>
+          </div>
+        </div>
+      </main>
+      <!--]-->
+    </div>
+
+    <script
+      async=""
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7002319867557344"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google tag (gtag.js) -->
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PRSXQ5TQJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'G-3PRSXQ5TQJ')
+    </script> 
+    -->
+
+    <!-- Baidu Tongji -->
+    <!-- 
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?6e338f57d51465d49b34a3fa8fd2e533";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script> 
+    -->
+  </body>
+</html>

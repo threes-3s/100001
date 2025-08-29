@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="/icons/apple-touch-icon.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISFP | MBTI | 性格测试 | 十六人格</title>
+    <meta
+      name="keywords"
+      content="MBTI,16personalities,测试性格,免费性格测试,十六人格,九型人格测试,职业性格测试,工作规划,职业发展,恋爱,三观,人格,内向,外向,INFP,INTJ,INTP,ISTJ,INFJ,ENTP,ENFP,ISFJ,ISFP,ENTJ,ISTP,ESFP,ESTJ,ESTP,ESFJ,ENFJ"
+    />
+    <meta
+      name="description"
+      content="超过200万用户选择的职业性格及人才测评平台,提供权威、准确的MBTI十六型人格性格测试及海量相关内容,帮助您找到最合适的职业和人生方向"
+    />
+    <script
+      defer=""
+      src="https://hm.baidu.com/hm.js?6e338f57d51465d49b34a3fa8fd2e533"
+    ></script>
+    <link rel="dns-prefetch" href="https://s.one-quant.com" />
+    <link rel="dns-prefetch" href="http://tcb-api.tencentcloudapi.com" />
+    <script
+      type="module"
+      async=""
+      crossorigin=""
+      src="/assets/app-Ba0Wni1V.js"
+    ></script>
+    <link rel="stylesheet" crossorigin="" href="/assets/B2XaiBzU.css" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script>
+    <link rel="modulepreload" crossorigin="" href="/assets/Ceo1e4fE.js" />
+    <link rel="stylesheet" href="/assets/y62ks7c4.css" />
+  </head>
+
+  <body>
+    <div id="app" data-server-rendered="true">
+      <!--[-->
+      <main data-v-e26d0c9e="">
+        <header data-v-e26d0c9e="" data-v-85a67040="">
+          <ul
+            role="menubar"
+            style="--el-menu-level: 0"
+            class="el-menu el-menu--horizontal menu"
+            data-v-85a67040=""
+          >
+            <li
+              class="el-menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[--><img
+                height="45px"
+                src="data:image/png;base64,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"
+                data-v-85a67040=""
+              /><!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <div class="flex-grow" data-v-85a67040=""></div>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[-->MBTI<!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[-->性格类型<!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[-->性格测试<!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[-->测试结果<!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[--><a
+                href="https://answer-book.com"
+                target="_blank"
+                data-v-85a67040=""
+                >答案之书</a
+              ><!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[--><!--]--><!--[--><!--]--><!--]-->
+            </li>
+          </ul>
+          <!--teleport start-->
+          <div
+            class="el-overlay menu-drawer-overlay"
+            style="z-index: 3017; display: none"
+          >
+            <!--[--><!--[-->
+            <div
+              aria-modal="true"
+              aria-labelledby="el-id-3183-32"
+              aria-describedby="el-id-3183-33"
+              class="menu-drawer el-drawer rtl"
+              style="width: 30%"
+              role="dialog"
+            >
+              <span class="el-drawer__sr-focus" tabindex="-1"></span>
+              <header class="el-drawer__header">
+                <!--[-->
+                <div class="menu-drawer-header" data-v-85a67040="">
+                  <img
+                    src="data:image/svg+xml,%3csvg%20t='1750684389471'%20fill='%2388619a'%20class='icon'%20viewBox='0%200%201024%201024'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20p-id='19915'%20width='200'%20height='200'%3e%3cpath%20d='M109.4%2066.8c27-8.2%2056.2%202.2%2071.8%2025.8l330.8%20496L842.8%2092.4c15.6-23.4%2044.8-34%2071.8-25.8S960%2099.8%20960%20128v768c0%2035.4-28.6%2064-64%2064s-64-28.6-64-64V339.4L565.2%20739.6c-11.8%2017.8-31.8%2028.4-53.2%2028.4s-41.4-10.6-53.2-28.4L192%20339.4V896c0%2035.4-28.6%2064-64%2064S64%20931.4%2064%20896V128c0-28.2%2018.4-53%2045.4-61.2z'%20fill='%2388619a'%20p-id='19916'%3e%3c/path%3e%3c/svg%3e"
+                    width="35"
+                    style="margin-right: 10px"
+                    data-v-85a67040=""
+                  />
+                  <div class="brand" data-v-85a67040="">
+                    <span data-v-85a67040="">更好的了解你自己</span>
+                    <h3 data-v-85a67040="">MBTI 性格测试</h3>
+                  </div>
+                </div>
+                <!--]--><button
+                  aria-label="Close this dialog"
+                  class="el-drawer__close-btn"
+                  type="button"
+                >
+                  <i class="el-icon el-drawer__close" style=""
+                    ><!--[--><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 1024 1024"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z"
+                      ></path></svg
+                    ><!--]--></i
+                  >
+                </button>
+              </header>
+              <!--v-if--><!--v-if-->
+            </div>
+            <!--]--><!--]-->
+          </div>
+          <!--teleport end--><svg
+            class="menu-icon"
+            viewBox="0 0 48 48"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            data-v-85a67040=""
+          >
+            <path
+              fill="#88619a"
+              d="M44.438 10.688H3.562A.564.564 0 0 1 3 10.124v-2.25c0-.31.253-.563.563-.563h40.874c.31 0 .563.254.563.563v2.25c0 .31-.253.563-.563.563zm0 15H3.562A.564.564 0 0 1 3 25.125v-2.25c0-.31.253-.563.563-.563h40.874c.31 0 .563.254.563.563v2.25c0 .31-.253.563-.563.563zm0 15H3.562A.564.564 0 0 1 3 40.124v-2.25c0-.31.253-.563.563-.563h40.874c.31 0 .563.254.563.563v2.25c0 .31-.253.563-.563.563z"
+              data-v-85a67040=""
+            ></path>
+          </svg>
+        </header>
+        <div
+          class="container"
+          style="background: #e4ae3a"
+          data-v-e26d0c9e=""
+          data-v-32bf60fe=""
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1920 60"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+            class="wave-shape"
+            style="background: #e4ae3a"
+            data-v-32bf60fe=""
+          >
+            <path
+              d="m0 20 420 40L800 0l750 60 370-45V0H0z"
+              fill="#fff"
+              data-v-32bf60fe=""
+            ></path></svg
+          ><!--[-->
+          <div class="content" data-v-e26d0c9e="">
+            <div
+              class="type-info"
+              style="background: #e4ae3a"
+              data-v-e26d0c9e=""
+            >
+              <h1 data-v-e26d0c9e="">探险家</h1>
+              <h3 data-v-e26d0c9e="">ISFP性格-i人</h3>
+              <p data-v-e26d0c9e="">
+                探险家灵动迷人，随时准备探索和体验新事物。
+              </p>
+            </div>
+            <div class="type-img" data-v-e26d0c9e=""></div>
+            <div class="clear" data-v-e26d0c9e=""></div>
+          </div>
+          <!--]-->
+          <div class="bg bg-desktop" data-v-32bf60fe=""><!--[--><!--]--></div>
+          <div class="bg bg-mobile" data-v-32bf60fe=""><!--[--><!--]--></div>
+        </div>
+        <!---->
+        <div class="article mbti-container" data-v-e26d0c9e="">
+          <h1 data-v-e26d0c9e="">探险家</h1>
+          <div class="el-tabs el-tabs--right tabs" data-v-e26d0c9e="">
+            <div class="el-tabs__header el-tabs__header-vertical is-right">
+              <div class="el-tabs__nav-wrap is-right">
+                <!---->
+                <div class="el-tabs__nav-scroll">
+                  <div
+                    class="el-tabs__nav is-right"
+                    style="transform: translateY(-0px)"
+                    role="tablist"
+                  >
+                    <div class="el-tabs__active-bar is-right" style=""></div>
+                    <!--[--><!--]-->
+                  </div>
+                </div>
+              </div>
+              <!---->
+            </div>
+            <div class="el-tabs__content">
+              <!--[-->
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <blockquote>
+                    <p>
+                      我在一天的过程中改变。当我醒来时，我是一个人，当我睡去时，我确信我是另一个人。
+                    </p>
+                    <footer>鲍勃·迪伦</footer>
+                  </blockquote>
+                  <p>
+                    探险家是真正的艺术家 --
+                    尽管不一定是传统意义上的。对于这种人格类型，生活本身就是自我表达的画布。从他们的穿着到他们如何度过空闲时间，探险家的行为方式生动地反映了他们作为独特个体的身份。
+                  </p>
+                  <p>
+                    每个探险家当然都是独一无二的。出于好奇心和尝试新事物的渴望，具有这种性格的人往往拥有一系列令人着迷的激情和兴趣。凭借他们的探索精神和在日常生活中找到快乐的能力，探险家可以成为您见过的最有趣的人之一。唯一的讽刺？不张扬、谦逊的探险家往往认为自己“只是在做自己的事情”，因此他们甚至可能没有意识到自己有多了不起。
+                  </p>
+
+                  <h2>敞开心胸的美</h2>
+                  <p>
+                    探险家拥抱灵活、适应性强的生活方式。一些性格类型的人喜欢严格的时间表和常规，但探险家却不是。探险家每天都在努力，做当下对他们来说正确的事情。他们确保在生活中留出足够的空间来应对意想不到的事情，因此，他们最珍惜的许多记忆都是自发的、一时冲动的郊游和冒险，包括独自和与亲人一起进行。
+                  </p>
+                  <p>
+                    这种灵活的思维方式使探险家表现出极大的宽容和开放。这些人真的喜欢生活在一个充满各种各样的人的世界里，即使是不同意他们的观点或选择截然不同的生活方式的人。因此，探险家对改变主意和重新思考自己的观点持不同寻常的态度也就不足为奇了。如果某个性格类型相信给某事
+                    (或某人) 第二次机会，那就是探险家。
+                  </p>
+                  <div class="description-pullout">
+                    探险家希望生活在一个世界上，在这个世界上，他们--以及其他所有人--都可以自由地生活，而不需要被评判。
+                  </div>
+                  <p>
+                    虽然这样说，但探险家的顺其自然的心态可能有其缺点。具有这种性格类型的人可能很难制定长期计划--更不用说坚持了。因此，探险家往往对自己实现目标的能力有相当模糊的看法，他们经常担心让其他人失望。探险家可能会发现，在他们的生活中增加一点框架结构有助于帮助他们感到更有能力和有条理--同时不会压制他们的独立精神。
+                  </p>
+                  <h2>和谐相处</h2>
+                  <p>
+                    在他们的人际关系中，探险家热情、友好、有爱心，全心全意地享受他们最亲近的人的陪伴。但请不要误会:
+                    这是一种内向的性格类型，这意味着探险家在与他人交往后需要独处的时间来充实自己的精力。这一单独的时间让探险家重新建立了自己的身份感--换言之，重新认识自己的真实身份。
+                  </p>
+                  <div class="description-pullout">
+                    除非他们为自己留出时间，否则探险家最终可能会在日常生活的浪潮中感到迷失，不断地对外部环境做出反应，而不是走自己的路。
+                  </div>
+                  <p>
+                    富有创造力和自由精神的探险家们按照自己的节奏前进，人们很容易认为他们并不特别担心别人对他们的看法。但事实并非如此--探险家深思熟虑、洞察力强，能够捕捉到人们未说出口的感受和意见，如果他们觉得自己不被喜欢、认可或欣赏，这可能会让他们感到不安。当面对批评时，对于这种性格类型的人来说，要不陷入一时的愤怒之中可能是一个挑战。如果他们遇到严厉或看似不公平的批评，他们甚至可能以惊人的方式发脾气。
+                  </p>
+                  <p>
+                    但是也有好的一面:
+                    探险家生活在当下，他们知道他们不需要纠结于过去的伤痛或挫折。这种性格类型的人不关注事情会有什么不同，而是有一种不可思议的能力去欣赏生活中正确的一面。无论在哪里，探险家都能找到其他人可能会错过的美丽和享受的源泉——而这种视角只是他们与世界分享的众多礼物之一。
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e=""></div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e=""></div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ISFP
+                        人格类型（冒险家）的人对待友谊就像对待生活一样——充满好奇心、思想开放，并且非常欣赏个性。他们是在您最快乐时为您加油打气的朋友，在您最沮丧时为您提供依靠。他们善于捕捉情绪暗示和理解感受，这使他们成为非常有同理心的朋友，在危机或困惑时为您提供安慰和倾听。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="scene">
+                    <img
+                      style="display: none"
+                      alt="ISFP（冒险家）朋友"
+                      src="/scene/explorers_Adventurer_ISFP_friendships.svg"
+                    />
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >在友谊中，ISFP
+                        型人格是最悠闲、最自然的人。他们不会因争论或长期计划而陷入困境。当下才是最重要的。他们喜欢花时间与朋友一起进行休闲、有趣的活动。</font
+                      ></font
+                    >
+                  </p>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >一起享受生活</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ISFP
+                        型人格相信行动，而不是言语。这种对行动的热情对他们来说是一种祝福，因为它帮助他们克服了结识新朋友的羞怯。ISFP
+                        通常非常内敛和敏感 -
+                        比大多数人更内敛和敏感。与新朋友建立足够的信任需要时间，这样他们才能感到舒适地敞开心扉，做自己。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >然而，当他们和他们信任的朋友在一起时，他们知道如何放松，摆脱规则、传统和期望，只享受自己。ISFP
+                        人格类型的人很乐意与任何人相处，但潜在的朋友需要避免过于挑剔或苛刻。如果新认识的人一开始就解释说，“如果……你会做得更好”，那么他们不太可能会亲近——ISFP
+                        只是把这些话看得太个人化，让人感到不舒服。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >与 ISFP
+                        成为朋友意味着建立一种以理解、同理心、适应性和共同探索热爱为特征的纽带。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >如果朋友们一直支持他们，并且相处融洽，ISFP
+                        通常很乐意用更多的温暖和欢笑来回报他们。他们甚至可能在旅途中提出一些自发的冒险，让他们的友谊变得令人兴奋，并充满独特的共同体验。因此，喜欢安全、有条理环境的人最终可能会在这种友谊中挣扎——尤其是如果他们教这些自发性格的人如何生活。与任何批评一样，这些朋友可以自由地做自己的事情，让
+                        ISFP 做他们的事情。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >总体而言，拥有充足的个人空间和自由对于 ISFP
+                        人格类型的人来说至关重要。他们重视塑造自己生活的自由，同时也尊重朋友的自主权。他们很少将自己的观点强加于他人，这对他们在友谊中形成的舒适空间大有裨益。没有比
+                        ISFP
+                        更好的朋友了，他们能放下伪装，享受轻松的乐趣。</font
+                      ></font
+                    >
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >在养育子女方面，具有 ISFP
+                        人格类型（冒险家）的人可能会为孩子营造一个不带偏见的安全空间，让他们可以公开表达自己的想法，他们相信每个孩子都应该有自由走自己独特的道路。虽然没有人完全准备好成为父母，但这类人天生的热情、务实和放松的性格有助于他们快速适应，并珍惜养育孩子带来的每一个快乐和艰辛时刻。</font
+                      ></font
+                    >
+                  </p>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >寻找日常生活中的快乐</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ISFP
+                        最大的优势可以说是他们与所爱之人在一起并帮助他们时所获得的快乐。从第一天起，他们就照顾好实际需求，他们的孩子每天都可以做一些令人兴奋的事情或学习一些有趣的东西。ISFP
+                        父母可能会在安静的下午自发地带孩子去露营或参加计划外的艺术和手工艺课程，给他们惊喜。他们对孩子想要探索的东西没有限制，他们认为学习和成长往往不在结构化的日常生活中。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="scene">
+                    <img
+                      style="display: none"
+                      alt="ISFP（冒险家）父母"
+                      src="/scene/explorers_Adventurer_ISFP_parenthood.svg"
+                    />
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >在为人父母的过程中，ISFP
+                        型人格的人喜欢花时间陪伴孩子，喜欢参与以高质量时间为中心的活动。即兴旅行、重新粉刷卧室等家居装修项目，或者只是一起烘焙一些零食，都可能成为孩子们的美好回忆。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >这并不是说 ISFP
+                        型父母专横跋扈——事实上，在养育子女方面，他们是性格最随和的人之一。他们认为，让孩子成长为思想开放、平衡的人的唯一方法是让他们探索和体验新事物，犯错并从中吸取教训，并始终让他们知道，孩子最终能够回家。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >强硬的规则根本不符合 ISFP 的风格。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ISFP
+                        人格类型的人给予孩子的自由也伴随着风险，因为这要求孩子本身具备一定的成熟度。有些课程比其他课程更难。对于
+                        ISFP
+                        来说，这些课程也可能是艰难的课程，因为他们在生活方式或育儿方式受到批评时比大多数人更敏感。对于这些人来说，没有什么比“我早就跟你说过”更令人不快的了。</font
+                      ></font
+                    >
+                  </p>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >爱的力量</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >随着孩子进入青春期，ISFP
+                        型人格可能难以接受青少年时期有时会发生的剧烈变化。这些人格需要知道他们的工作和努力得到了赞赏，而青少年通常不会表达这一点。孩子们通常会努力与那个年龄的人保持距离，无论是私人还是私人，ISFP
+                        型人格都需要知道他们的亲人就在他们身边。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >但最终，ISFP
+                        不太可能制造出与孩子之间的隔阂，而其他性格更为僵硬的人有时会在他们和孩子之间制造隔阂。青少年和
+                        10
+                        岁左右的孩子总会对此有所抵触，但有了如此温暖、关爱的父母，他们的孩子总能放心，因为他们知道家在哪里。</font
+                      ></font
+                    >
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >在职场上，ISFP
+                        人格类型（冒险家）的人需要的不仅仅是一份工作。财富、权力、结构、晋升和安全虽然本身都很好，但往往排在他们最大的需求之后：创作自由。ISFP
+                        渴望有切实的渠道来发挥他们的想象力，渴望有机会表达他们对什么有效的想法。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >那些重视可预测性和长期规划的人发现，试图将这些观点强加给
+                        ISFP 的人更有可能扼杀他们的热情而不是引导它。</font
+                      ></font
+                    >
+                  </div>
+                  <div class="scene">
+                    <img
+                      style="display: none"
+                      alt="ISFP（冒险家）职业"
+                      src="/scene/explorers_Adventurer_ISFP_career_path.svg"
+                    />
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >在职业发展过程中，ISFP
+                        型人格将他们独特的独创性、适应性和情商融合在一起。他们喜欢将技能应用于实践，并具有跳出思维定势的能力，这使他们适合从事重视创新和自发性的职业。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ISFP
+                        拥有独特的视角和简单的自我意识，他们是天生的艺术家、音乐家、摄影师、培训师以及各行各业的设计师。对于这些人来说，在
+                        Etsy
+                        等网站上开店远比在荧光隔间里朝九晚五地做行政工作更有吸引力。</font
+                      ></font
+                    >
+                  </p>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >工作中的自由精神</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ISFP
+                        人格类型的人讨厌在单调、一成不变的环境中无所事事。他们是自由的灵魂，需要灵活性、即兴发挥的机会以及能够调动感官的沉浸式工作。与他们的开放心态一致，如果目前的道路感觉不对，他们不怕改变职业轨迹。他们敢于走未铺砌的道路，喜欢活在当下，相信此时此刻才是最重要的。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >尽管如此，ISFP
+                        型人格可能在长期规划和决策方面存在困难。这可能会使职业发展变得有点复杂，因为他们倾向于优先考虑眼前的体验而不是遥远的结果。此外，ISFP
+                        型人格通常觉得自己无法控制退休计划等流程——他们无法预测未来，所以现在担心是没有用的。对吧？</font
+                      ></font
+                    >
+                  </p>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >展望明天</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >这种心态可能会阻碍 ISFP
+                        人格类型的人从事许多良好的职业，例如教练、咨询和教学，这些职业需要长期规划，并且通常需要大量认证才能开始。他们需要花费大量精力才能长时间专注于一个目标，但这可以让他们余生的每一天都更加有意义。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >更简单的途径是从事自由职业和咨询工作，几乎任何这些性格的人都喜欢从事这些行业。无论是组织慈善活动、与医院合作让病人住得更舒适，还是创造他们的新工艺，ISFP
+                        似乎总能找到让世界变得更快乐、更美好的方法——并在这一过程中谋生。</font
+                      ></font
+                    >
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e=""></div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >很少有人格类型像
+                        ISFP（冒险家）一样多姿多彩、魅力十足。他们以善良和艺术才能而闻名，善于寻找令人兴奋的新事物来探索和体验。ISFP
+                        的创造力和脚踏实地的态度在许多领域都是无价的，包括他们自己的个人成长。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="scene">
+                    <img
+                      style="display: none"
+                      alt="ISFP（冒险家）性格"
+                      src="/scene/explorers_Adventurer_ISFP_conclusion.svg"
+                    />
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >然而，ISFP
+                        很容易在某些方面犯错，因为他们对实际问题的关注更多的是一种负担而不是一种优点。无论是寻找（或留住）伴侣、在职业阶梯上达到令人眼花缭乱的高度，还是学会提前计划，具有这种性格类型的人都需要有意识地努力发展他们的弱点和额外技能。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >到目前为止，您读到的只是对 ISFP
+                        人格类型的复杂概念的介绍。您可能会喃喃自语：“哇，这太准确了，有点令人毛骨悚然”或“终于有人了解我了！”您甚至可能会问：“他们怎么比我最亲近的人更了解我？”</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >这不是诡计。你感觉被理解是因为你确实被理解了。我们研究了
+                        ISFP
+                        人格类型的人如何思考以及他们需要什么才能充分发挥他们的潜力。不，我们并没有监视你——你所面临的和未来将要面临的许多挑战已经被其他
+                        ISFP 克服了。你只需要学习他们是如何成功的。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >但为了做到这一点，你需要有一个计划，一个个人路线图。如果你不知道自己想去哪里，即使是世界上最好的汽车也无法带你到正确的地方。我们已经告诉你
+                        ISFP
+                        性格在特定情况下的表现，以及他们的主要优势和劣势是什么。现在我们需要更深入地了解你的性格类型，并回答“为什么”、“如何”和“如果”的问题。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >这些知识只是终生旅程的开始。你准备好了解 ISFP
+                        性格的人为什么会这样做了吗？是什么激励和启发了你？你害怕什么？你暗暗梦想着什么？你如何释放自己真正的、非凡的潜力？</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >我们的高级冒险家套房为您提供了通往更快乐、更成功、更全能的您的路线图！但它并不适合所有人——您需要愿意并能够挑战自己，超越显而易见的事物，想象并遵循自己的道路，而不是随波逐流。如果您想自己掌控一切，我们会帮助您。</font
+                      ></font
+                    >
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <!--]-->
+            </div>
+          </div>
+        </div>
+      </main>
+      <!--]-->
+    </div>
+
+    <script
+      async=""
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7002319867557344"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google tag (gtag.js) -->
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PRSXQ5TQJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'G-3PRSXQ5TQJ')
+    </script> 
+    -->
+
+    <!-- Baidu Tongji -->
+    <!-- 
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?6e338f57d51465d49b34a3fa8fd2e533";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script> 
+    -->
+  </body>
+</html>

@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="/icons/apple-touch-icon.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ESFJ | MBTI | 性格测试 | 十六人格</title>
+    <meta
+      name="keywords"
+      content="MBTI,16personalities,测试性格,免费性格测试,十六人格,九型人格测试,职业性格测试,工作规划,职业发展,恋爱,三观,人格,内向,外向,INFP,INTJ,INTP,ISTJ,INFJ,ENTP,ENFP,ISFJ,ISFP,ENTJ,ISTP,ESFP,ESTJ,ESTP,ESFJ,ENFJ"
+    />
+    <meta
+      name="description"
+      content="超过200万用户选择的职业性格及人才测评平台,提供权威、准确的MBTI十六型人格性格测试及海量相关内容,帮助您找到最合适的职业和人生方向"
+    />
+    <script
+      defer=""
+      src="https://hm.baidu.com/hm.js?6e338f57d51465d49b34a3fa8fd2e533"
+    ></script>
+    <link rel="dns-prefetch" href="https://s.one-quant.com" />
+    <link rel="dns-prefetch" href="http://tcb-api.tencentcloudapi.com" />
+    <script
+      type="module"
+      async=""
+      crossorigin=""
+      src="/assets/app-Ba0Wni1V.js"
+    ></script>
+    <link rel="stylesheet" crossorigin="" href="/assets/B2XaiBzU.css" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script>
+    <link rel="modulepreload" crossorigin="" href="/assets/Ceo1e4fE.js" />
+    <link rel="stylesheet" href="/assets/y62ks7c4.css" />
+  </head>
+
+  <body>
+    <div id="app" data-server-rendered="true">
+      <!--[-->
+      <main data-v-e26d0c9e="">
+        <header data-v-e26d0c9e="" data-v-85a67040="">
+          <ul
+            role="menubar"
+            style="--el-menu-level: 0"
+            class="el-menu el-menu--horizontal menu"
+            data-v-85a67040=""
+          >
+            <li
+              class="el-menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[--><img
+                height="45px"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP8AAAAyCAYAAACTfg2gAAAIoUlEQVR4nO2dW2xURRjHB2NK0bZQW6AtvQhtoeVebgptQIOAAgqJGkEejKBGTXzxAeOzUYMP+mCiJgo+GAWDD6KkEjEIkcpFKbeWAi2tlNIWKVbaCi0vNf9DZzl7zszsnLM7BTrfL9lwOHuZPdv9z/y/b76ZHdbf39/PCIKwjnvoT04QdkLiJwhLIfEThKWQ+AnCUkj8BGEpJH6CsBQSP0FYComfICzlXtllV+2oZs1nWln+pBxWvmqWsU/n5P6zrOb3s8bbIQgiGqH4KzfvYyerzjrHzafbnH9NCBPCr9yyz3g7BEH4EYq/+Uxb1P/REUwtL2YjM1MT9hFe7eiOCP9Wu62snA2++A/vPi48P2/JDCPtXWnvZH3Xbwjvyxk/1kiboKnuArvc8o/vfFpGCiuZVWisXc6N3huso63Tdz41PYWljrrfePtENFLb74YLde3GlQn7+LzCv538uvWwsHVT4q893MAOfH9MeN9L7z3DMrLSjbT75y81rPFoi+/8/NUz4xJ/a9Ml9tU7P0Sde3TtPN/nV3fkHNu1eb/v+XhsblGW9PWpczCDlvjZgC1HHiARthx2n9t8G8krzmIHJNfdcq7dmPhFwgdjch8YlL/CocoTwvOyzpcj6kiI+AmU7Yf9hwuIB5Hdt43MbLnY/r5wxcingdFZxugc8+JHaNXZ1mW8HUIf7ZGfJcj+2y58oLKw7U0dRtq83OqP9TlhnEb3v/+xuj8anOOrV/wDwvnTrRErP3xEEju4059XGZE6nL26aQ1LSk5ix6vqhCEBHlM6tyjw+yNiE0j8LE77b7vddzOhLFdow1vrLxtpT/a5432EobuzR2nXcW38+iDg6919znFO8WiWnDLcOZ7z2FRH+EgEykKCh1fOoHjfEIHFz0Jm/8nuRzNqtPyzw6ia6C980wlxvK96HyqQhEMsjhG+s73LZ+nTs9NYelaaczxx1oNO59N7rS/qMUhApqWnsD3bDwpDAnQUFOubQ0v8ELk71g9j/20R/unqc5EaCRUQjIzvP90dGR1lTCufqJ2hx9QiH3m9jMnLCHWd6JwKp+U71r7hZLNv9mLmIyVRws0tzGJfv/+j7300Hv1O+PpwC8tfXBTqvRF6aIk/f1I2u5qZEmUdg9h/kd3PL8lmIzNStYQSlu0f/zQoz3/2jScix11XeqRZdV10rH9BSY7262EGQYU7GRikzgAjNq5VFDrAEfCw4K0tLzt5hXVvPynsAEQsfaHc2KwHcRPtkR8i/2zjtqjzOvZfZvfLn5rNagwKnymmtkw+HwUzYePooO3oosqzeJNsr3/4fEJCjrEFmb7Pj3cAlV/uU3Zws5aWDkrRke1ox/wQeMWq2Wz/jiORczr2XyR8vA5GftPivx3gS3unfXFPVZ3TfuzFxvaEvP/kEUnC8+gAVr+2hH3y5jdxt0HER6CEH0Z5lODq2n+Z3R+s+n3YTR02rf88rufHQjbH7q1ccz8OU3N9126WACOuDlv2i5LeINQfPa8tfl1nhJwDt/DI7COnoaL65zrn3iVrKkJdM6FHIPFj9F++fpGW/VfZfdvwlr5yvJVrVTurhYKaXF7IcjaEE3/D8fPC80ioAW/8DZewbF2FMwWnS/J96uQkX8cA4X/7UaVWToM6APMEXs/P7b8bkdBVdt8mVJV13np2WRIPgoRwwtB08qLwWaXzJzg3EY2ngrmFsfmxZwxUwkfnxjsjN+gAdm/zF/4QiSHUZh4Y5b0i5vaf3QF2/05CVVkH2+8GU2cyggqSDXQ8spLaohkFzk2EiRkYmfAxlw+ngUQgdQCDS6giH5X9z5uUTXbfhaxWH190b1YdcbG7Gs5NkFicU3uoXtr2+NK8yLF/7r0lKk6Pl77eG2z6wkls1Jg0X6EPZgWO/XbT4o+fnht1P8IJuAoq9DFDKPEzRfZ/6wc7fY+10e5zZLYbX3TZeVF2PkwsXnegUXh+5uLSyDGsP4+v3VTvrU1YvD08OYmdrf5LmM+IlTTEdZP4zRDXHn4i++/FVrvPBrLcMtsti5OLy8RWnAW0/qg0lBXTTJl3a6GMzPqj4wibZ9AFrgM1EfyGEIAYPOISP7f/Kmy1+yxGZZ1s84pxE+SbWsD66yKL2yEwt52H/RfF2ug4sPmGSbKLRjvVkfy2eM18o+0R0cS9e68o+8+x2e4DWF0Zsnl75AGwKEaEbHGOFyT6ZHYasbcXdxjgRrbSjhgaJGTrbpH9t9nus4GpLZkAY9nb8dPGCc9jNFZNHXJQLyCjdLY/aVi2cLLw0QhZED4QQ5OEiJ/bf17k46wFsNjusxjxecEUsbg5sjgctDSoF+lgObCs00HNvChhCLch65Bk4YNOJ8TDia7OnpiPJQaf0Nl+LxD82o0r2NWOHqutPkcVnxcp5vPBOEUpL1bLqbLfB3cdld435aFi6X1zl01jO+r3+M6jI4HQw5QXI6bH87HSkbjzSOgv9qADIOHftPyyxTQYDWMJCaOzbCSGmGRZeIz6omk7NrBjj6pd1BCIEn8sRhhB3L3Qz3UZQGX5ZSW1XlShwUWJ5VaN+tj8IxayxB8f/YmhRcJsP3ELVXmsKp53o9re+0J9e6RCj6Ma9TF7oFMdiMSf7PcEdn6xl73y7nNa712XtobLURum9PbE3uSDSBzCkX9kpv5GEfHg3QQEO/vc7agSbu6y2lgo4/5af9WgatRf+PQcrTaR+MMiGxEmMv+YveAbfTruwtDmpYQY4cg/dcHEqIU5qNc3AaYI3eXBptqJRSJ33sGutvgFnEvn/VtwB9l6C3H/4xsqImv6Y4GOE0uERQRZE7BgRZnWKj2+gScbKFjy/uoO7sduQ9ihF79TgOMg10+YZ1h/f3+/txXU6NdU1dOv9BLEEEYofoIghj6U7ScISyHxE4SlkPgJwlJI/ARhKSR+grAUEj9BWAqJnyAshcRPEJZC4icIG2GM/Q/0sbXP5AeExQAAAABJRU5ErkJggg=="
+                data-v-85a67040=""
+              /><!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <div class="flex-grow" data-v-85a67040=""></div>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[-->MBTI<!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[-->性格类型<!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[-->性格测试<!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[-->测试结果<!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[--><a
+                href="https://answer-book.com"
+                target="_blank"
+                data-v-85a67040=""
+                >答案之书</a
+              ><!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[--><!--]--><!--[--><!--]--><!--]-->
+            </li>
+          </ul>
+          <!--teleport start-->
+          <div
+            class="el-overlay menu-drawer-overlay"
+            style="z-index: 3015; display: none"
+          >
+            <!--[--><!--[-->
+            <div
+              aria-modal="true"
+              aria-labelledby="el-id-3183-28"
+              aria-describedby="el-id-3183-29"
+              class="menu-drawer el-drawer rtl"
+              style="width: 30%"
+              role="dialog"
+            >
+              <span class="el-drawer__sr-focus" tabindex="-1"></span>
+              <header class="el-drawer__header">
+                <!--[-->
+                <div class="menu-drawer-header" data-v-85a67040="">
+                  <img
+                    src="data:image/svg+xml,%3csvg%20t='1750684389471'%20fill='%2388619a'%20class='icon'%20viewBox='0%200%201024%201024'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20p-id='19915'%20width='200'%20height='200'%3e%3cpath%20d='M109.4%2066.8c27-8.2%2056.2%202.2%2071.8%2025.8l330.8%20496L842.8%2092.4c15.6-23.4%2044.8-34%2071.8-25.8S960%2099.8%20960%20128v768c0%2035.4-28.6%2064-64%2064s-64-28.6-64-64V339.4L565.2%20739.6c-11.8%2017.8-31.8%2028.4-53.2%2028.4s-41.4-10.6-53.2-28.4L192%20339.4V896c0%2035.4-28.6%2064-64%2064S64%20931.4%2064%20896V128c0-28.2%2018.4-53%2045.4-61.2z'%20fill='%2388619a'%20p-id='19916'%3e%3c/path%3e%3c/svg%3e"
+                    width="35"
+                    style="margin-right: 10px"
+                    data-v-85a67040=""
+                  />
+                  <div class="brand" data-v-85a67040="">
+                    <span data-v-85a67040="">更好的了解你自己</span>
+                    <h3 data-v-85a67040="">MBTI 性格测试</h3>
+                  </div>
+                </div>
+                <!--]--><button
+                  aria-label="Close this dialog"
+                  class="el-drawer__close-btn"
+                  type="button"
+                >
+                  <i class="el-icon el-drawer__close" style=""
+                    ><!--[--><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 1024 1024"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z"
+                      ></path></svg
+                    ><!--]--></i
+                  >
+                </button>
+              </header>
+              <!--v-if--><!--v-if-->
+            </div>
+            <!--]--><!--]-->
+          </div>
+          <!--teleport end--><svg
+            class="menu-icon"
+            viewBox="0 0 48 48"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            data-v-85a67040=""
+          >
+            <path
+              fill="#88619a"
+              d="M44.438 10.688H3.562A.564.564 0 0 1 3 10.124v-2.25c0-.31.253-.563.563-.563h40.874c.31 0 .563.254.563.563v2.25c0 .31-.253.563-.563.563zm0 15H3.562A.564.564 0 0 1 3 25.125v-2.25c0-.31.253-.563.563-.563h40.874c.31 0 .563.254.563.563v2.25c0 .31-.253.563-.563.563zm0 15H3.562A.564.564 0 0 1 3 40.124v-2.25c0-.31.253-.563.563-.563h40.874c.31 0 .563.254.563.563v2.25c0 .31-.253.563-.563.563z"
+              data-v-85a67040=""
+            ></path>
+          </svg>
+        </header>
+        <div
+          class="container"
+          style="background: #4298b4"
+          data-v-e26d0c9e=""
+          data-v-32bf60fe=""
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1920 60"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+            class="wave-shape"
+            style="background: #4298b4"
+            data-v-32bf60fe=""
+          >
+            <path
+              d="m0 20 420 40L800 0l750 60 370-45V0H0z"
+              fill="#fff"
+              data-v-32bf60fe=""
+            ></path></svg
+          ><!--[-->
+          <div class="content" data-v-e26d0c9e="">
+            <div
+              class="type-info"
+              style="background: #4298b4"
+              data-v-e26d0c9e=""
+            >
+              <h1 data-v-e26d0c9e="">执政官</h1>
+              <h3 data-v-e26d0c9e="">ESFJ性格-e人</h3>
+              <p data-v-e26d0c9e="">
+                执政官非常关心他人，善于社交，总是乐于助人。
+              </p>
+            </div>
+            <div class="type-img" data-v-e26d0c9e=""></div>
+            <div class="clear" data-v-e26d0c9e=""></div>
+          </div>
+          <!--]-->
+          <div class="bg bg-desktop" data-v-32bf60fe=""><!--[--><!--]--></div>
+          <div class="bg bg-mobile" data-v-32bf60fe=""><!--[--><!--]--></div>
+        </div>
+        <!---->
+        <div class="article mbti-container" data-v-e26d0c9e="">
+          <h1 data-v-e26d0c9e="">执政官</h1>
+          <div class="el-tabs el-tabs--right tabs" data-v-e26d0c9e="">
+            <div class="el-tabs__header el-tabs__header-vertical is-right">
+              <div class="el-tabs__nav-wrap is-right">
+                <!---->
+                <div class="el-tabs__nav-scroll">
+                  <div
+                    class="el-tabs__nav is-right"
+                    style="transform: translateY(-0px)"
+                    role="tablist"
+                  >
+                    <div class="el-tabs__active-bar is-right" style=""></div>
+                    <!--[--><!--]-->
+                  </div>
+                </div>
+              </div>
+              <!---->
+            </div>
+            <div class="el-tabs__content">
+              <!--[-->
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <blockquote>
+                    <p>
+                      相互鼓励、提升和加强。因为我们所有人都会感受到传播到一个人的正能量。
+                    </p>
+                    <footer>黛博拉·戴</footer>
+                  </blockquote>
+                  <p>
+                    对于执政官来说，与他人分享生活是最甜蜜的。具有这种人格类型的人构成了许多社区的基石，向朋友、亲人和邻居开放了他们的家园和心灵。
+                  </p>
+                  <p>
+                    这并不意味着执政官像每个人一样，又或者他们是圣人。但是执政官确实相信好客和礼貌的力量，他们往往会对周围的人感到一种责任感。慷慨而可靠，这种性格类型的人经常以大大小小的方式承担自己的责任，将家人和社区团结在一起。
+                  </p>
+                  <div class="description-pullout">
+                    执政官具有使生活中的人们感到被支持、被照顾和安全的才能。
+                  </div>
+
+                  <h2>负责任的生活之美</h2>
+                  <p>
+                    执政官是利他主义者。他们认真对待自己的责任，回馈他人，服务他人，做正确的事。
+                  </p>
+                  <p>
+                    执政官们认为，在几乎每种情况下，都有明确的正确做法。一些性格类型的人采取更宽容、和睦相处的态度，但执政官可能会发现，当某人选择了一条让他们感到误入歧途的道路时，他们很难不做出评判。结果就是，当某人(尤其是他们关心的人)不同意他们的观点时，执政官常常难以接受。
+                  </p>
+                  <div class="description-pullout">
+                    执政官有一个明确的道德指南针--当其他人的行为与之不符时，会令他们感到困惑。
+                  </div>
+                  <p>
+                    执政官对是非有明确的看法，往往倾向于固执己见。但是这些观点并不是任意的--它们通常是基于对传统的深刻尊重。执政官知道他们所做的一切都会影响别人，他们相信既定的法律、协议和社会规范将帮助他们以体恤和对他人负责的方式驾驭日常生活。
+                  </p>
+                  <h2>建立持久的关系</h2>
+                  <p>
+                    总是可以在聚会上看到乐于助人和外向的执政官--他们是四处走动的人，以确保其他所有人都玩得开心!
+                    但不要搞错:
+                    执政官不会随便闯入别人的生活。他们忠于核心，建立了持久的关系，每当需要伸出援助之手或侧耳倾听，就可以指望他们出现。
+                  </p>
+                  <div class="description-pullout">
+                    执政官很少错过生日或假期。他们专注于自己的人际关系，即使是朋友和亲人生活中的最小细节也会被铭记。
+                  </div>
+                  <p>
+                    由于对秩序和结构的热爱，执政官更喜欢有计划的活动，而不是开放式活动或自发的聚会--他们很乐意主办这种活动，以确保一切顺利进行。这种性格的人会投入大量精力让别人觉得自己很特别，很受欢迎，当有人似乎不欣赏他们的努力时，他们可能会放在心上。
+                  </p>
+                  <p>
+                    对于许多具有执政官人格类型的人来说，生活中最大的挑战之一就是接受他们无法控制其他人的思想或行为--甚至无法控制与他们最亲近的人。幸运的是，执政官可以通过专注于他们最擅长的事情来找到和平与充实:
+                    树立关怀、体恤和负责任的榜样--并在此过程中使人们团结在一起。
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e=""></div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e=""></div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ESFJ
+                        人格类型（领事）的人非常善于交际，他们寻求广泛的朋友圈，并证明自己非常愿意花时间和精力来维持这些关系。他们忠诚而热情，以不顾一切地支持朋友以及提供持续的情感支持和鼓励而闻名。总的来说，ESFJ
+                        非常致力于友谊的传统，将他们提供的支持视为一种责任和乐趣。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="scene">
+                    <img
+                      style="display: none"
+                      alt="ESFJ（领事）朋友"
+                      src="/scene/sentinels_Consul_ESFJ_friendships.svg"
+                    />
+                  </div>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ESFJ
+                        性格的人善于交际且精力充沛，在社交活动中给人一种乐观、充满活力的感觉。他们自然而然地在周围有很多人的环境中茁壮成长。</font
+                      ></font
+                    >
+                  </div>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >受欢迎且具有保护性</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ESFJ
+                        会尽一切努力让朋友开心，而且他们很擅长介绍和闲聊，因此几乎在任何环境中都很受欢迎。他们真的很享受这种动态，但他们也希望自己的努力和支持得到回报。对于这种性格类型的人来说，没有什么比发现一个值得信赖的朋友批评他们的信仰或习惯更伤人的了——除非是在直接对峙中被告知。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ESFJ
+                        型人格倾向于相信他们的朋友不会做错事，无论情况如何，他们总是站出来保护他们，并且他们期望得到同样的回报。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >尽管 ESFJ
+                        在他们遇到的人中普遍很受欢迎，但如果他们学会更乐于接受其他观点，而不是仓促做出判断和结论，他们的朋友圈就会大大扩大。对他们来说，和任何人一样，重要的是避免被其他观点和意见所孤立——尝试与更多的人建立联系并理解他们。</font
+                      ></font
+                    >
+                  </p>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >我们谁都跑不了</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >总而言之，ESFJ
+                        非常善于利用自己的敏感性来了解朋友的动机和驱动力。虽然在他们情绪低落的时候，他们有时会利用这些观察来操纵他人，但他们更感兴趣的是维持牢固的关系，而这是一个很好的工具。作为真正的利他主义者，ESFJ
+                        人格几乎总是将自己的力量用于善事，鼓励和激励他人。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >总体而言，ESFJ
+                        是令人愉快和真诚的人。他们的活力和社交智慧为他们赢得了许多熟人和朋友，他们的支持和奉献使这些友谊保持亲密和牢固。他们对生活充满热情，缺少陪伴和无聊的时刻肯定很少见。</font
+                      ></font
+                    >
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >作为父母，具有 ESFJ
+                        人格类型（领事）的人有极好的机会以具有真正积极影响的方式展示他们的温暖、感情和奉献精神。ESFJ
+                        父母敏感而坚定，能够建立规则和权威，但又不会完全专横，利用他们的同情心和支持来消除偶尔出现的沟通不畅或意见分歧。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >生儿育女往往是 ESFJ
+                        型人格人士人生目标的顶峰，他们珍惜人生中的每个时刻。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >从一开始，他们就努力确保孩子感到安全和快乐。他们享受着能够给予婴儿的支持，婴儿完全依赖他们的照顾。家庭对
+                        ESFJ 来说非常重要，这是一段关系非常有益的开始。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="scene">
+                    <img
+                      style="display: none"
+                      alt="ESFJ（领事）父母"
+                      src="/scene/sentinels_Consul_ESFJ_parenthood.svg"
+                    />
+                  </div>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >保护还是过度保护？</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ESFJ
+                        型父母将他们强大的实践能力和组织能力带入了育儿领域。他们非常善于规划孩子的日程安排、跟踪他们在学校的进步情况以及管理家务和职责。他们的可靠性和奉献精神使他们成为非常亲力亲为的父母，在身体和情感上都陪伴着孩子的生活。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >随着孩子长大并开始探索，ESFJ
+                        型人格的爱和关怀也随之增长，但有时也会变得过度保护。他们不仅通过安排玩耍约会、夏令营参观和其他活动来保护孩子的身体安全，而且还在社交方面保护孩子。他们可能会让孩子的日程安排得过于满满，以至于孩子没有自由做出自己的选择，或者犯下可能导致情感成长和社会独立的错误。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >当 ESFJ
+                        的孩子开始表达自己的意见并独立做出决定时，具有这种性格类型的人可能很难接受这种改变。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ESFJ
+                        非常重视和谐与稳定，他们经常试图用间接压力来传授人生经验。然而，当他们因孩子公然犯错而被迫与孩子发生冲突时，这些父母会坚定地介入，并希望他们的话得到尊重。ESFJ
+                        人格类型的父母信奉传统角色，他们往往以非黑即白的眼光看待亲子关系，并以他们的权威为最终决定。</font
+                      ></font
+                    >
+                  </p>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >独立的礼物</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >随着孩子进入青春期并开始疏远父母，这些通常很热情的照顾者可能会把这种转变当成是针对他们自己的。ESFJ
+                        型人格的人感觉自己正在失去孩子，有时会试图尽可能延长对孩子的依赖。重要的是要记住，成年子女离开家，是因为他们的父母成功地为他们做好了进入人生下一阶段的准备——这是这些父母可以引以为豪的成就。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ESFJ
+                        父母的孩子将永远感激他们成长过程中所获得的敏感和温暖，随着时间的流逝，他们有了自己的孩子，他们会珍惜这样一个事实，即那些孩子能够得到祖父母无条件地爱护和关心他们。</font
+                      ></font
+                    >
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >由于 ESFJ
+                        人格类型（领事）的人格特质表现得非常强烈，具有务实意识和社会活力，因此他们往往在以充分利用这些特质为核心的职业中获得最大的满足感。他们组织能力强。他们喜欢在工作场所营造秩序和结构，而且他们通常在层次结构和任务清晰、可预测的环境中工作效率最高。只要与他人一起工作，单调乏味和例行公事的工作对他们来说就不是什么挑战。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >为了在自己的职业中感受到真正的满足，ESFJ
+                        需要定期的机会来感受到自己富有成效、有用，并且感觉到自己正在以某种方式帮助他人。</font
+                      ></font
+                    >
+                  </div>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >利他动机</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >管理者是他们天生的职业选择，他们不仅能管理环境，还能管理其中的人。他们的实践技能与可靠性完美结合，让
+                        ESFJ
+                        型人格成为出人意料的优秀会计师——尽管他们往往更喜欢做个人会计师，帮助他人并与他们直接互动，而不是像公司会计师那样在幕后处理数字。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="scene">
+                    <img
+                      style="display: none"
+                      alt="ESFJ（领事）职业"
+                      src="/scene/sentinels_Consul_ESFJ_career_path.svg"
+                    />
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >对于 ESFJ
+                        来说，纯粹的分析性职业可能太过枯燥——除非他们能与人际互动和情感反馈相结合。ESFJ
+                        人格类型的人善于倾听，是热情的团队成员，是医疗保健和社会工作的优秀提供者。教学是另一个不错的选择，因为他们对权威感到自在，但又足够支持和友好，不会让权威感到霸道。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >最适合 ESFJ
+                        性格的职业都有额外的好处，可以满足他们最重要的要求：感到被欣赏并知道自己帮助了别人。</font
+                      ></font
+                    >
+                  </div>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >伸出援助之手</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >尽管 ESFJ
+                        是利他主义者，但他们很难感到满足，除非他们知道自己为他人做了有价值的事情。这通常是这些性格的人事业和职业发展的驱动力，也使宗教工作和咨询工作特别有意义。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >无论他们选择做什么，ESFJ
+                        在繁忙的社交场合中的舒适感以及实用的知识和技能相结合，使人们不仅能够高效、乐于助人，而且真正享受其中的乐趣。</font
+                      ></font
+                    >
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e=""></div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >很少有人格类型像
+                        ESFJ（领事）这样务实和有爱心。他们以社交和管理技能而闻名，擅长为自己和亲人创造和维持一个安全、稳定和友好的环境。他们的奉献精神在许多领域都是无价的，包括他们自己的个人成长。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >然而，ESFJ
+                        型人格很容易在某些方面犯错，他们的善良和务实态度更像是一种负担而不是一种资产。无论是寻找（或维持）伴侣、学会放松或即兴发挥、在职业阶梯上达到令人眼花缭乱的高度，还是管理工作量，ESFJ
+                        型人格都需要有意识地努力发展他们的弱点和额外技能。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="scene">
+                    <img
+                      style="display: none"
+                      alt="ESFJ（领事）型人格"
+                      src="/scene/sentinels_Consul_ESFJ_conclusion.svg"
+                    />
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >到目前为止，您读到的只是对 ESFJ
+                        人格类型这一复杂概念的介绍。您可能会喃喃自语：“哇，这太准确了，有点令人毛骨悚然”或“终于有人理解我了！”您甚至可能会问：“他们怎么比我最亲近的人更了解我？”</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >这不是诡计。你感觉被理解是因为你确实被理解了。我们研究了
+                        ESFJ
+                        性格的人如何思考以及他们需要什么才能充分发挥他们的潜力。不，我们并没有监视你——你所面临的和未来将要面临的许多挑战已经被其他
+                        ESFJ 克服了。你只需要学习他们是如何成功的。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >但为了做到这一点，你需要有一个计划，一个个人路线图。如果你不知道自己想去哪里，即使是世界上最好的汽车也无法带你到正确的地方。我们已经告诉你
+                        ESFJ
+                        在某些情况下会如何表现，以及他们的主要优势和劣势是什么。现在我们需要更深入地了解你的性格类型，并回答“为什么？”，“如何？”和“如果？”</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >这些知识只是终生旅程的开始。你准备好了解你的部落为什么会这样做了吗？是什么激励和启发了你？你害怕什么？你暗暗梦想着什么？你如何释放自己真正的、非凡的潜力？</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >我们的高级 Consul Suite
+                        为您提供了路线图，让您更快乐、更成功、更灵活！但它并不适合所有人——您需要愿意并能够挑战自己，超越显而易见的事物，想象并遵循自己的道路，而不是随波逐流。如果您想自己掌控一切，我们会帮助您。</font
+                      ></font
+                    >
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <!--]-->
+            </div>
+          </div>
+        </div>
+      </main>
+      <!--]-->
+    </div>
+
+    <script
+      async=""
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7002319867557344"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google tag (gtag.js) -->
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PRSXQ5TQJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'G-3PRSXQ5TQJ')
+    </script> 
+    -->
+
+    <!-- Baidu Tongji -->
+    <!-- 
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?6e338f57d51465d49b34a3fa8fd2e533";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script> 
+    -->
+  </body>
+</html>

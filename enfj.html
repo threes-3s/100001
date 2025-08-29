@@ -1,0 +1,878 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="/icons/apple-touch-icon.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ENFJ | MBTI | 性格测试 | 十六人格</title>
+    <meta
+      name="keywords"
+      content="MBTI,16personalities,测试性格,免费性格测试,十六人格,九型人格测试,职业性格测试,工作规划,职业发展,恋爱,三观,人格,内向,外向,INFP,INTJ,INTP,ISTJ,INFJ,ENTP,ENFP,ISFJ,ISFP,ENTJ,ISTP,ESFP,ESTJ,ESTP,ESFJ,ENFJ"
+    />
+    <meta
+      name="description"
+      content="超过200万用户选择的职业性格及人才测评平台,提供权威、准确的MBTI十六型人格性格测试及海量相关内容,帮助您找到最合适的职业和人生方向"
+    />
+    <script
+      defer=""
+      src="https://hm.baidu.com/hm.js?6e338f57d51465d49b34a3fa8fd2e533"
+    ></script>
+    <link rel="dns-prefetch" href="https://s.one-quant.com" />
+    <link rel="dns-prefetch" href="http://tcb-api.tencentcloudapi.com" />
+    <script
+      type="module"
+      async=""
+      crossorigin=""
+      src="/assets/app-Ba0Wni1V.js"
+    ></script>
+    <link rel="stylesheet" crossorigin="" href="/assets/B2XaiBzU.css" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script>
+    <link rel="modulepreload" crossorigin="" href="/assets/Ceo1e4fE.js" />
+    <link rel="stylesheet" href="/assets/y62ks7c4.css" />
+  </head>
+
+  <body>
+    <div id="app" data-server-rendered="true">
+      <!--[-->
+      <main data-v-e26d0c9e="">
+        <header data-v-e26d0c9e="" data-v-85a67040="">
+          <ul
+            role="menubar"
+            style="--el-menu-level: 0"
+            class="el-menu el-menu--horizontal menu"
+            data-v-85a67040=""
+          >
+            <li
+              class="el-menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[--><img
+                height="45px"
+                src="data:image/png;base64,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"
+                data-v-85a67040=""
+              /><!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <div class="flex-grow" data-v-85a67040=""></div>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[-->MBTI<!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[-->性格类型<!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[-->性格测试<!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[-->测试结果<!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[--><a
+                href="https://answer-book.com"
+                target="_blank"
+                data-v-85a67040=""
+                >答案之书</a
+              ><!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[--><!--]--><!--[--><!--]--><!--]-->
+            </li>
+          </ul>
+          <!--teleport start-->
+          <div
+            class="el-overlay menu-drawer-overlay"
+            style="z-index: 3010; display: none"
+          >
+            <!--[--><!--[-->
+            <div
+              aria-modal="true"
+              aria-labelledby="el-id-3183-18"
+              aria-describedby="el-id-3183-19"
+              class="menu-drawer el-drawer rtl"
+              style="width: 30%"
+              role="dialog"
+            >
+              <span class="el-drawer__sr-focus" tabindex="-1"></span>
+              <header class="el-drawer__header">
+                <!--[-->
+                <div class="menu-drawer-header" data-v-85a67040="">
+                  <img
+                    src="data:image/svg+xml,%3csvg%20t='1750684389471'%20fill='%2388619a'%20class='icon'%20viewBox='0%200%201024%201024'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20p-id='19915'%20width='200'%20height='200'%3e%3cpath%20d='M109.4%2066.8c27-8.2%2056.2%202.2%2071.8%2025.8l330.8%20496L842.8%2092.4c15.6-23.4%2044.8-34%2071.8-25.8S960%2099.8%20960%20128v768c0%2035.4-28.6%2064-64%2064s-64-28.6-64-64V339.4L565.2%20739.6c-11.8%2017.8-31.8%2028.4-53.2%2028.4s-41.4-10.6-53.2-28.4L192%20339.4V896c0%2035.4-28.6%2064-64%2064S64%20931.4%2064%20896V128c0-28.2%2018.4-53%2045.4-61.2z'%20fill='%2388619a'%20p-id='19916'%3e%3c/path%3e%3c/svg%3e"
+                    width="35"
+                    style="margin-right: 10px"
+                    data-v-85a67040=""
+                  />
+                  <div class="brand" data-v-85a67040="">
+                    <span data-v-85a67040="">更好的了解你自己</span>
+                    <h3 data-v-85a67040="">MBTI 性格测试</h3>
+                  </div>
+                </div>
+                <!--]--><button
+                  aria-label="Close this dialog"
+                  class="el-drawer__close-btn"
+                  type="button"
+                >
+                  <i class="el-icon el-drawer__close" style=""
+                    ><!--[--><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 1024 1024"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z"
+                      ></path></svg
+                    ><!--]--></i
+                  >
+                </button>
+              </header>
+              <!--v-if--><!--v-if-->
+            </div>
+            <!--]--><!--]-->
+          </div>
+          <!--teleport end--><svg
+            class="menu-icon"
+            viewBox="0 0 48 48"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            data-v-85a67040=""
+          >
+            <path
+              fill="#88619a"
+              d="M44.438 10.688H3.562A.564.564 0 0 1 3 10.124v-2.25c0-.31.253-.563.563-.563h40.874c.31 0 .563.254.563.563v2.25c0 .31-.253.563-.563.563zm0 15H3.562A.564.564 0 0 1 3 25.125v-2.25c0-.31.253-.563.563-.563h40.874c.31 0 .563.254.563.563v2.25c0 .31-.253.563-.563.563zm0 15H3.562A.564.564 0 0 1 3 40.124v-2.25c0-.31.253-.563.563-.563h40.874c.31 0 .563.254.563.563v2.25c0 .31-.253.563-.563.563z"
+              data-v-85a67040=""
+            ></path>
+          </svg>
+        </header>
+        <div
+          class="container"
+          style="background: #33a474"
+          data-v-e26d0c9e=""
+          data-v-32bf60fe=""
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1920 60"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+            class="wave-shape"
+            style="background: #33a474"
+            data-v-32bf60fe=""
+          >
+            <path
+              d="m0 20 420 40L800 0l750 60 370-45V0H0z"
+              fill="#fff"
+              data-v-32bf60fe=""
+            ></path></svg
+          ><!--[-->
+          <div class="content" data-v-e26d0c9e="">
+            <div
+              class="type-info"
+              style="background: #33a474"
+              data-v-e26d0c9e=""
+            >
+              <h1 data-v-e26d0c9e="">主人公</h1>
+              <h3 data-v-e26d0c9e="">ENFJ性格-e人</h3>
+              <p data-v-e26d0c9e="">
+                主人公是激励人心的乐观者，会积极行动去做他们感觉是对的事。
+              </p>
+            </div>
+            <div class="type-img" data-v-e26d0c9e=""></div>
+            <div class="clear" data-v-e26d0c9e=""></div>
+          </div>
+          <!--]-->
+          <div class="bg bg-desktop" data-v-32bf60fe=""><!--[--><!--]--></div>
+          <div class="bg bg-mobile" data-v-32bf60fe=""><!--[--><!--]--></div>
+        </div>
+        <!---->
+        <div class="article mbti-container" data-v-e26d0c9e="">
+          <h1 data-v-e26d0c9e="">主人公</h1>
+          <div class="el-tabs el-tabs--right tabs" data-v-e26d0c9e="">
+            <div class="el-tabs__header el-tabs__header-vertical is-right">
+              <div class="el-tabs__nav-wrap is-right">
+                <!---->
+                <div class="el-tabs__nav-scroll">
+                  <div
+                    class="el-tabs__nav is-right"
+                    style="transform: translateY(-0px)"
+                    role="tablist"
+                  >
+                    <div class="el-tabs__active-bar is-right" style=""></div>
+                    <!--[--><!--]-->
+                  </div>
+                </div>
+              </div>
+              <!---->
+            </div>
+            <div class="el-tabs__content">
+              <!--[-->
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <p>
+                    主人公觉得被召唤为生活中更大的目标服务。这些人格类型深思熟虑，理想化，努力对其他人和他们周围的世界产生积极的影响。他们很少回避做正确事情的机会，即使这样做远非易事。
+                  </p>
+
+                  <p>
+                    主人公是天生的领导者，这解释了为什么可以在许多著名的政治家、教练和老师中找到这些个性。他们的热情和魅力使他们不仅可以在自己的职业生涯中，而且可以在生活的各个领域
+                    (包括人际关系)
+                    中激励他人。没有什么比引导朋友和亲人成长为最好的自己更能给主人公带来更深刻的喜悦和满足感了。
+                  </p>
+                  <blockquote>
+                    <p>当整个世界都沉默时，即使一个声音也变得强大。</p>
+                    <footer>马拉拉·优萨福·扎伊</footer>
+                  </blockquote>
+                  <h2>为正确的事情发声</h2>
+                  <p>
+                    主人公倾向于大声疾呼自己的价值观，包括实事求是和利他主义。当某些事情使他们感到不公正或错误时，他们会大声说出来。但是他们很少会显得傲慢或急躁，因为他们的敏感性和洞察力会引导他们以与他人共鸣的方式表述。
+                  </p>
+                  <p>
+                    这些人格类型具有不可思议的能力来了解人们的潜在动机和信念。有时，他们甚至可能自己都不了解如何能如此迅速地掌握了另一个人的思想和内心。这些洞察力的闪光点可以使主人公成为令人难以置信的说客和鼓舞人心的沟通者。
+                  </p>
+                  <div class="description-pullout">
+                    改变人们的想法并非易事--但如果有人能做到，那就是主人公。
+                  </div>
+                  <p>
+                    主人公的秘密武器是他们意图的纯粹。一般来说，他们的动机是真诚地希望做正确的事情，而不是想要操纵或拥有对他人的掌控权。即使他们不同意某人，主人公也会求同存异。因此，具有这种性格类型的人可以以几乎无法回绝的口才和敏感性进行交流，尤其是当他们谈论与自己内心深处的事情时。
+                  </p>
+                  <h2>参与其中</h2>
+                  <p>
+                    当主人公关心某人时，他们希望帮助解决该人的问题--有时不惜一切代价。许多人会感谢主人公的帮助和建议。毕竟，这些人在帮助他人改善生活方面享有盛誉是有原因的。
+                  </p>
+                  <div class="description-pullout">
+                    主人公是真诚，有爱心的人，他们不仅会说话而且办实事。没有什么比激励其他人去做正确的事情更让他们快乐了。
+                  </div>
+                  <p>
+                    但是卷入别人的问题并不总是成功的秘诀。主人公往往对人们可以或应该做些什么来改善自己有一个清晰的愿景，但并不是每个人都准备好做出这些改变。如果主人公用力过猛，他们所爱的人可能会感到怨恨或受到了不公正的评判。尽管这种人格类型以洞察力而闻名，但即使是最聪明的主人公有时也可能会误读情况或不知不觉地给出错误的建议。
+                  </p>
+                  <h2>引领道路</h2>
+                  <p>
+                    具有这种性格类型的人是忠诚的利他主义者，他们随时准备面对吊索和箭头，以捍卫他们所信仰的人和思想。这种信念的力量增强了主人公与生俱来的领导才能，尤其是他们指导人们共同为更高的利益服务的能力。
+                  </p>
+                  <p>
+                    但他们最大的天赋实际上可能是以身作则。在他们的日常生活中，主人公揭示了如何以同情、奉献和关怀来处理看似普通的情况。对于这些人来说，即使是最小的日常选择和行动--从他们如何度过周末，到他们对苦苦挣扎的同事说的话--都可以成为引领通往更光明未来的机会。
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e=""></div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e=""></div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >与他人建立联系让 ENFJ
+                        人格类型（主角）的人感到活力十足、目标明确。因此，他们对友谊绝不冷漠也就不足为奇了。ENFJ
+                        会付出真诚、专注的努力与朋友保持亲密关系。对于这些性格的人来说，友谊绝非可有可无或无关紧要——相反，它们是美好生活的重要组成部分。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="scene">
+                    <img
+                      style="display: none"
+                      alt="ENFJ（主角）朋友"
+                      src="/scene/diplomats_Protagonist_ENFJ_friendships.svg"
+                    />
+                  </div>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >丰富的视角</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >很少有人格类型能与 ENFJ
+                        一样真诚地渴望了解他人。对于这些性格的人来说，发现某人的怪癖、观点、希望和愚蠢是生活中最纯粹的乐趣之一。大多数
+                        ENFJ
+                        都会情不自禁地对其他世界观着迷，即使是那些他们完全不同意的世界观。遇到丰富的观点是这些类型的人生活充满乐趣的原因。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >因此，ENFJ
+                        们身边都是各种各样的朋友和熟人。事实上，他们是最有可能拥有多个朋友群体的人格类型，这些朋友涵盖了他们生活的不同方面。从工作伙伴到健身伙伴再到派对伙伴，ENFJ
+                        们喜欢通过与朋友共度时光、进行愉快的交谈以及了解朋友的喜好来放松身心。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >尽管如此，大多数 ENFJ
+                        型人格的人很难尊重那些走捷径、不尊重他人或拒绝挑战现状的人。相反，他们发现最容易与那些与他们有共同核心理想的人建立联系，尤其是那些致力于做正确的事情并让世界变得比他们发现的更好的人。正是在这些最亲密的朋友面前，ENFJ
+                        型人格的人才会真正敞开心扉，分享他们的弱点和他们一生中最珍贵的梦想。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ENFJ
+                        性格的人对利他主义的热情常常导致他们将自己的影响圈扩展到自己的直接群体之外，为其网络中的其他人提供帮助并创造不存在的机会。</font
+                      ></font
+                    >
+                  </div>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >风雨同舟</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ENFJ
+                        是任何人都希望拥有的最好的朋友之一。这种性格类型的人心地善良、值得信赖，为友谊投入了大量的精力和关注。他们希望朋友不仅感到被认可，而且感到被支持，不仅感到被倾听，而且感到被理解。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >从最亲密的朋友到广泛的熟人圈子，ENFJ
+                        性格的人都以一种目的感来处理人际关系，建立不易破裂的纽带。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >他们也值得信赖，无论大小，他们都会表现出色——无论是在工作一天后抽出时间帮助朋友润色简历，还是为需要鼓励的朋友组织一个周末的目的地生日派对。没有什么比看到他们关心的人过得好更让
+                        ENFJ
+                        性格的人高兴的了，几乎没有什么能阻止他们努力帮助实现这一点。</font
+                      ></font
+                    >
+                  </p>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >寻找平衡</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >虽然 ENFJ
+                        们喜欢伸出援助之手，但他们并不总是对结果感到满意。事实上，有些人没有精力或动力充分利用他们提供的帮助——或者他们可能根本不想这么做。例如，他们的朋友可能会忽略简历建议，或者他们可能决定放松一下，而不是用那份新简历发送求职申请。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >当这种情况发生时，ENFJ
+                        人格类型的人可能会感到不被重视、沮丧或怨恨。他们甚至可能会为了推动朋友进步而变得挑剔——这种方法往往会适得其反。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >随着年龄的增长，许多 ENFJ
+                        学会避免将朋友的行为放在心上。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >矛盾的是，更灵活的态度可以引导这些类型的人更有效地支持他们关心的人。正如许多
+                        ENFJ
+                        发现的那样，最持久的友谊不仅建立在共同成长的基础上，还建立在接受、同情和真诚的尊重的基础上。</font
+                      ></font
+                    >
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ENFJ
+                        人格类型（主角）的人将自己的所有天赋都用在养育孩子上，包括同情心、决心，甚至领导能力。作为父母，他们受到强烈的使命感的引导。具体来说，ENFJ
+                        认为帮助孩子成长为最好、最善良、最有能力的自己是自己的使命。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >为了实现这一目标，ENFJ
+                        型人格者努力为孩子营造充满爱、鼓励和支持的家庭生活。具有这种性格类型的父母鼓励孩子发挥创造力和真实性，让他们自由地表达自己的想法，做自己。对他们来说，为人父母最大的回报之一就是看着孩子成长为独特的人格。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="scene">
+                    <img
+                      style="display: none"
+                      alt="ENFJ（主角）父母"
+                      src="/scene/diplomats_Protagonist_ENFJ_parenthood.svg"
+                    />
+                  </div>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >人生最重要的教训</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >但 ENFJ
+                        性格的人富有同情心和爱心，并不意味着他们采取“什么都行”的心态。像所有父母一样，这类人偶尔也会利用职权，告诉孩子做某事“因为我这么说”。然而，在内心深处，ENFJ
+                        希望确保他们的孩子出于理解而不是盲目服从而做正确的事情。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >幸运的是，这些理想主义、善良的父母可以用鼓舞和激励孩子的方式来解释对错。这些类型的人也往往擅长制定明确、适合年龄的规则和界限，以便他们的孩子了解不负责任或不友善行为的后果。同样重要的是，ENFJ
+                        型人格以身作则，树立他们希望孩子效仿的行为榜样。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >即使 ENFJ
+                        父母行为严格，他们也是出于爱——为了向孩子灌输强烈的价值观和个人责任感。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >具有这种性格类型的人不仅仅是纪律严明的人物。ENFJ
+                        是富有同情心的向导，他们体现了他们希望孩子秉持的价值观，包括真诚、公平和尊重不同的人和观点。他们以身作则，通常会让孩子在成长过程中对世界的多样性产生非凡的欣赏，并形成有目标的人生观。</font
+                      ></font
+                    >
+                  </p>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >远大前程</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ENFJ
+                        型父母对子女的要求很高，而且这些期望通常是出于好意。他们只是想确保子女能够走上一条有意义、充实的生活之路，充分发挥他们的潜力。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ENFJ
+                        型人格的人为自己能够看到每个人给世界带来了什么而感到自豪，这一特质可以帮助他们认识到孩子在各个方面的天赋和能力。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >然而，有时，他们的期望可能会让孩子感到难以承受。ENFJ
+                        型人格的孩子有时可能会觉得他们需要通过达到父母的标准来赢得他们的爱——这些标准似乎难以达到。在这种情况下，ENFJ
+                        型人格的孩子可能需要向孩子保证，他们之所以被爱，是因为他们本身，而不是他们所做的事情。</font
+                      ></font
+                    >
+                  </p>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >支持基石</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >幸运的是，ENFJ
+                        的敏感性使他们能够理解孩子更深层次的需求，包括被接受的需求。即使他们敦促孩子成长、学习和追逐梦想，具有这种性格类型的父母也可以为孩子提供情感支持的基石，让他们终生受益。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >无论孩子需要什么才能成长，ENFJ
+                        父母都会投入必要的时间和精力来满足他们的需要。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >随着年龄的增长，ENFJ
+                        型人格的孩子很少会忘记父母给予他们的真诚温暖、关怀、爱和鼓励。这些孩子在成长过程中往往会深刻体会到父母给予他们的品格，包括诚实、同理心、责任感以及做正确事情的重要性。</font
+                      ></font
+                    >
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >在选择职业时，ENFJ
+                        人格类型（主角）的人会从做自己最喜欢的事情（帮助他人）中获得满足感。他们也喜欢以个人魅力作为成功重要因素的职业。凭借与生俱来的魅力、创造力和干劲，ENFJ
+                        几乎可以在任何工作环境中找到许多不同的方式来服务和提升他人——无论是在公司董事会会议室闪闪发光的桌子后面，还是在当地一家备受喜爱的咖啡店的柜台后面。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="scene">
+                    <img
+                      style="display: none"
+                      alt="ENFJ（主角）职业"
+                      src="/scene/diplomats_Protagonist_ENFJ_career_path.svg"
+                    />
+                  </div>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ENFJ
+                        型人格的人在寻找有意义的工作时很少会缺乏灵感或机会。</font
+                      ></font
+                    >
+                  </div>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >赢得自己的地位</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >得益于情商和社交能力，ENFJ
+                        几乎可以在任何以人为本的领域表现出色，例如人力资源、活动管理、招聘或公共关系。话虽如此，他们往往在能够指导他人学习、成长和变得更加独立的职位上感到特别有动力。许多具有
+                        ENFJ
+                        人格类型的人倾向于从事具有利他目的的职业，例如社会工作、教学、咨询、指导、医疗保健或公益法。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ENFJ
+                        性格证明，为他人服务的愿望与远大抱负是可以兼容的。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >拥有这种性格类型的人不会淡出人们的视线，而是以领导能力而闻名，他们经常身居要职。ENFJ
+                        型人格的人可以担任公职，也可以掌管各种组织——从非营利组织和宗教团体到斗志昂扬的初创企业和企业帝国。ENFJ
+                        型人格的人也可能担任顾问、顾问和经理等职务。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >无论在哪里工作，ENFJ
+                        们都很少忘记自己的核心使命：改善人们的生活。这类人会本能地了解客户、顾客或员工的需求，然后发挥创造力，以创新、出乎意料的方式满足这些不同的需求。因此，ENFJ
+                        们能够将真诚、正直甚至理想主义带到销售、客户服务、营销、广告和产品开发等工作中。</font
+                      ></font
+                    >
+                  </p>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >寻找更深层次的问题</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ENFJ
+                        人格类型的人专注而积极，总是愿意接受挑战。不过，某些挑战比其他挑战更能激励他们。重复、孤立或受限制的工作可能会让他们感到沮丧，因为这些角色不允许他们发挥充满活力的创造力或做出有意义的贡献。这些性格的人希望看到自己产生的影响，而不是独自完成任务。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ENFJ
+                        们觉得工作让他们能够退后一步，思考大局，从而感到充实和充满活力。对于这些类型的人而言，留下积极的遗产是首要任务。这并不意味着他们必须解决像世界饥饿这样重大的问题（尽管我知道他们肯定愿意这样做）。但许多
+                        ENFJ
+                        人格确实会利用他们的专业精力来解决他们社区中人们所面临的至少一些更深层次的问题。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >在内心深处，ENFJ
+                        希望见证他们的工作带来的积极影响——感受和体验他们所帮助过的人的感激和赞赏。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ENFJ
+                        多才多艺、见解深刻，为他们的事业带来了许多优势。有时，他们可能会感到停滞不前或无聊，希望他们的日常任务能给世界带来更多明显的改变。但凭借他们利他、富有创造力的精神，ENFJ
+                        人格几乎不可避免地会找到方法利用他们的工作（无论工作内容是什么）为更大的利益做出贡献。</font
+                      ></font
+                    >
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e=""></div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >到目前为止，您读到的只是对 ENFJ
+                        人格类型（主角）的人的复杂性的介绍。一路上，您可能会喃喃自语：“哇，这太准确了，有点令人毛骨悚然”，或“终于有人理解我了！”您甚至可能会问：“他们怎么比我最亲近的人更了解我？”</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >如果你现在感觉被理解了，那是因为你确实被理解了。多年的研究让我们对像你这样的
+                        ENFJ
+                        的独特优势和挑战有了新的认识。我们了解你的创造力、你的热情和你做正确事情的承诺，但我们也了解你性格类型的阴暗面：你一直担心自己可能无法充分发挥潜力，无法充分利用你那狂野而宝贵的一生。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="scene">
+                    <img
+                      style="display: none"
+                      alt="ENFJ（主角型）人格"
+                      src="/scene/diplomats_Protagonist_ENFJ_conclusion.svg"
+                    />
+                  </div>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >ENFJ
+                        的天赋包括理想主义、决心和展望美好未来的能力——但他们不只是想听到是什么让他们变得伟大。这些性格的人致力于真正利用这些天赋来实现更伟大的目标。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <strong
+                      ><font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >这就是为什么我们将帮助像您这样的 ENFJ
+                          不仅欣赏自己的天赋，而且充分</font
+                        ></font
+                      ><em
+                        ><font style="vertical-align: inherit"
+                          ><font style="vertical-align: inherit"
+                            >利用它们作为我们</font
+                          ></font
+                        ></em
+                      ><font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >的使命。</font
+                        ></font
+                      ></strong
+                    ><font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >了解您的性格类型很有趣，但它还有更深层次的目的——因为自我理解可以帮助您确保自己正在做您来到这个世界上应该做的事情。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >因此，我们想问您一个问题，ENFJ：您准备好充分利用自己独特的优势了吗？释放您真正的、非凡的潜力了吗？如果是的话，您的高级主角套件将让您对自己的个性、人际关系、职业道路</font
+                      ></font
+                    ><em
+                      ><font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit">和</font></font
+                      ></em
+                    ><font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >人生使命有新的认识。这是一生的旅程——您将在进入下一节时找到开始所需的一切。</font
+                      ></font
+                    >
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <!--]-->
+            </div>
+          </div>
+        </div>
+      </main>
+      <!--]-->
+    </div>
+
+    <script
+      async=""
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7002319867557344"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google tag (gtag.js) -->
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PRSXQ5TQJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'G-3PRSXQ5TQJ')
+    </script> 
+    -->
+
+    <!-- Baidu Tongji -->
+    <!-- 
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?6e338f57d51465d49b34a3fa8fd2e533";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script> 
+    -->
+  </body>
+</html>

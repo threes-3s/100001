@@ -1,0 +1,907 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="/icons/apple-touch-icon.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INTP | MBTI | 性格测试 | 十六人格</title>
+    <meta
+      name="keywords"
+      content="MBTI,16personalities,测试性格,免费性格测试,十六人格,九型人格测试,职业性格测试,工作规划,职业发展,恋爱,三观,人格,内向,外向,INFP,INTJ,INTP,ISTJ,INFJ,ENTP,ENFP,ISFJ,ISFP,ENTJ,ISTP,ESFP,ESTJ,ESTP,ESFJ,ENFJ"
+    />
+    <meta
+      name="description"
+      content="超过200万用户选择的职业性格及人才测评平台,提供权威、准确的MBTI十六型人格性格测试及海量相关内容,帮助您找到最合适的职业和人生方向"
+    />
+    <script
+      defer=""
+      src="https://hm.baidu.com/hm.js?6e338f57d51465d49b34a3fa8fd2e533"
+    ></script>
+    <link rel="dns-prefetch" href="https://s.one-quant.com" />
+    <link rel="dns-prefetch" href="http://tcb-api.tencentcloudapi.com" />
+    <script
+      type="module"
+      async=""
+      crossorigin=""
+      src="/assets/app-Ba0Wni1V.js"
+    ></script>
+    <link rel="stylesheet" crossorigin="" href="/assets/B2XaiBzU.css" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <script id="vite-plugin-pwa:register-sw" src="/registerSW.js"></script>
+    <link rel="modulepreload" crossorigin="" href="/assets/Ceo1e4fE.js" />
+    <link rel="stylesheet" href="/assets/y62ks7c4.css" />
+  </head>
+
+  <body>
+    <div id="app" data-server-rendered="true">
+      <!--[-->
+      <main data-v-e26d0c9e="">
+        <header data-v-e26d0c9e="" data-v-85a67040="">
+          <ul
+            role="menubar"
+            style="--el-menu-level: 0"
+            class="el-menu el-menu--horizontal menu"
+            data-v-85a67040=""
+          >
+            <li
+              class="el-menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[--><img
+                height="45px"
+                src="data:image/png;base64,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"
+                data-v-85a67040=""
+              /><!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <div class="flex-grow" data-v-85a67040=""></div>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[-->MBTI<!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[-->性格类型<!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[-->性格测试<!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[-->测试结果<!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[--><a
+                href="https://answer-book.com"
+                target="_blank"
+                data-v-85a67040=""
+                >答案之书</a
+              ><!--]--><!--[--><!--]--><!--]-->
+            </li>
+            <li
+              class="el-menu-item menu-item"
+              role="menuitem"
+              tabindex="-1"
+              data-v-85a67040=""
+            >
+              <!--[--><!--[--><!--]--><!--[--><!--]--><!--]-->
+            </li>
+          </ul>
+          <!--teleport start-->
+          <div
+            class="el-overlay menu-drawer-overlay"
+            style="z-index: 3005; display: none"
+          >
+            <!--[--><!--[-->
+            <div
+              aria-modal="true"
+              aria-labelledby="el-id-3183-8"
+              aria-describedby="el-id-3183-9"
+              class="menu-drawer el-drawer rtl"
+              style="width: 30%"
+              role="dialog"
+            >
+              <span class="el-drawer__sr-focus" tabindex="-1"></span>
+              <header class="el-drawer__header">
+                <!--[-->
+                <div class="menu-drawer-header" data-v-85a67040="">
+                  <img
+                    src="data:image/svg+xml,%3csvg%20t='1750684389471'%20fill='%2388619a'%20class='icon'%20viewBox='0%200%201024%201024'%20version='1.1'%20xmlns='http://www.w3.org/2000/svg'%20p-id='19915'%20width='200'%20height='200'%3e%3cpath%20d='M109.4%2066.8c27-8.2%2056.2%202.2%2071.8%2025.8l330.8%20496L842.8%2092.4c15.6-23.4%2044.8-34%2071.8-25.8S960%2099.8%20960%20128v768c0%2035.4-28.6%2064-64%2064s-64-28.6-64-64V339.4L565.2%20739.6c-11.8%2017.8-31.8%2028.4-53.2%2028.4s-41.4-10.6-53.2-28.4L192%20339.4V896c0%2035.4-28.6%2064-64%2064S64%20931.4%2064%20896V128c0-28.2%2018.4-53%2045.4-61.2z'%20fill='%2388619a'%20p-id='19916'%3e%3c/path%3e%3c/svg%3e"
+                    width="35"
+                    style="margin-right: 10px"
+                    data-v-85a67040=""
+                  />
+                  <div class="brand" data-v-85a67040="">
+                    <span data-v-85a67040="">更好的了解你自己</span>
+                    <h3 data-v-85a67040="">MBTI 性格测试</h3>
+                  </div>
+                </div>
+                <!--]--><button
+                  aria-label="Close this dialog"
+                  class="el-drawer__close-btn"
+                  type="button"
+                >
+                  <i class="el-icon el-drawer__close" style=""
+                    ><!--[--><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 1024 1024"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z"
+                      ></path></svg
+                    ><!--]--></i
+                  >
+                </button>
+              </header>
+              <!--v-if--><!--v-if-->
+            </div>
+            <!--]--><!--]-->
+          </div>
+          <!--teleport end--><svg
+            class="menu-icon"
+            viewBox="0 0 48 48"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            data-v-85a67040=""
+          >
+            <path
+              fill="#88619a"
+              d="M44.438 10.688H3.562A.564.564 0 0 1 3 10.124v-2.25c0-.31.253-.563.563-.563h40.874c.31 0 .563.254.563.563v2.25c0 .31-.253.563-.563.563zm0 15H3.562A.564.564 0 0 1 3 25.125v-2.25c0-.31.253-.563.563-.563h40.874c.31 0 .563.254.563.563v2.25c0 .31-.253.563-.563.563zm0 15H3.562A.564.564 0 0 1 3 40.124v-2.25c0-.31.253-.563.563-.563h40.874c.31 0 .563.254.563.563v2.25c0 .31-.253.563-.563.563z"
+              data-v-85a67040=""
+            ></path>
+          </svg>
+        </header>
+        <div
+          class="container"
+          style="background: #88619a"
+          data-v-e26d0c9e=""
+          data-v-32bf60fe=""
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1920 60"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+            class="wave-shape"
+            style="background: #88619a"
+            data-v-32bf60fe=""
+          >
+            <path
+              d="m0 20 420 40L800 0l750 60 370-45V0H0z"
+              fill="#fff"
+              data-v-32bf60fe=""
+            ></path></svg
+          ><!--[-->
+          <div class="content" data-v-e26d0c9e="">
+            <div
+              class="type-info"
+              style="background: #88619a"
+              data-v-e26d0c9e=""
+            >
+              <h1 data-v-e26d0c9e="">逻辑学家</h1>
+              <h3 data-v-e26d0c9e="">INTP性格-i人</h3>
+              <p data-v-e26d0c9e="">
+                逻辑学家是具有创造力的发明家，对知识有着不可抑制的渴望。
+              </p>
+            </div>
+            <div class="type-img" data-v-e26d0c9e=""></div>
+            <div class="clear" data-v-e26d0c9e=""></div>
+          </div>
+          <!--]-->
+          <div class="bg bg-desktop" data-v-32bf60fe=""><!--[--><!--]--></div>
+          <div class="bg bg-mobile" data-v-32bf60fe=""><!--[--><!--]--></div>
+        </div>
+        <!---->
+        <div class="article mbti-container" data-v-e26d0c9e="">
+          <h1 data-v-e26d0c9e="">逻辑学家</h1>
+          <div class="el-tabs el-tabs--right tabs" data-v-e26d0c9e="">
+            <div class="el-tabs__header el-tabs__header-vertical is-right">
+              <div class="el-tabs__nav-wrap is-right">
+                <!---->
+                <div class="el-tabs__nav-scroll">
+                  <div
+                    class="el-tabs__nav is-right"
+                    style="transform: translateY(-0px)"
+                    role="tablist"
+                  >
+                    <div class="el-tabs__active-bar is-right" style=""></div>
+                    <!--[--><!--]-->
+                  </div>
+                </div>
+              </div>
+              <!---->
+            </div>
+            <div class="el-tabs__content">
+              <!--[-->
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <blockquote>
+                    <p>重要的是不要停止质疑。好奇心有其存在的理由。</p>
+                    <footer>阿尔伯特·爱因斯坦</footer>
+                  </blockquote>
+                  <p>
+                    逻辑学家以其独特的视角和旺盛的智力而自豪。他们不禁对宇宙的奥秘感到困惑--这也许可以解释为什么有史以来一些最有影响力的哲学家和科学家都是逻辑学家。这种人格类型相当罕见，但凭借他们的创造力和发明，逻辑学家并不惧怕在人群中脱颖而出。
+                  </p>
+                  <h2>心灵的生活</h2>
+                  <p>
+                    逻辑学家经常陷入沉思--这不一定是一件坏事。这种性格类型的人几乎不会停止思考。从他们醒来的那一刻起，他们的脑海里就充满了想法、问题和洞察。有时，他们甚至会发现自己在自己的头脑中进行全方位的辩论。
+                  </p>
+                  <div class="description-pullout">
+                    富有想象力和好奇心的逻辑学家可以在自己的思想运作中找到无尽的魅力。
+                  </div>
+                  <p>
+                    站在局外看，逻辑学家似乎生活在永无止境的白日梦中。他们以沉思、超然和有点内向而为人所知。也就是说，除非他们试图把他们所有的精神能量转移到当前或身边的人，否则可能会让所有人感到不太舒服。但是，无论他们处于哪种模式，逻辑学家都是内向的，并且倾向于因广泛的社交而感到疲倦。漫长的一天后，他们渴望有时间独自征询自己的想法。
+                  </p>
+                  <p>
+                    但是认为逻辑学家不友好或拘谨是错误的。当他们与一个能与他们的精神能量相匹配的人联系时，这些人格绝对会发光，从一个想法跳到另一个想法。很少有事情像有机会交换想法或与另一个好奇的、爱追根究底的灵魂进行热烈的辩论一样使他们充满活力。
+                  </p>
+
+                  <h2>一切的基础，我敬爱的逻辑学家</h2>
+                  <p>
+                    逻辑学家喜欢分析模式。不一定知道他们是如何做到的，但这种性格类型的人通常会有夏洛克·福尔摩斯式的发现差异和非常规行为的诀窍。换句话说，对他们撒谎并不明智。
+                  </p>
+                  <p>
+                    具有讽刺意味的是，逻辑学家的话不应该总是从字面上理解。他们很少故意不诚实，但是由于他们的思想活跃，他们有时会充斥着他们一直没有充分思考过的想法和理论。他们可能会改变主意，从周末计划到基本的道德原则，而从未意识到一开始自己似乎已经下定了决心。此外，他们通常很乐意扮演他们实际上反对的观点的拥护者，以保持讨论的趣味性。
+                  </p>
+                  <div class="description-pullout">
+                    对于逻辑学家来说，最好的对话就像头脑风暴会议，有足够的空间容纳非常规的想法和假设。
+                  </div>
+                  <p>
+                    逻辑学家可以整天思考想法和可能性--他们经常这样做。虽说如此，但将这些想法变为现实的实际日常工作并不总是会引起他们的兴趣。幸运的是，在剖析棘手的多层问题并提出创造性的解决方案时，很少有人格类型能够与逻辑师的创造才能和潜力相提并论。
+                  </p>
+                  <h2>宇宙的奥秘</h2>
+                  <p>
+                    具有这种个性类型的人希望了解宇宙中的一切，但有一个领域特别容易让他们感到困惑：人性。但逻辑学家在逻辑和理性领域最有宾至如归的感觉。结果，他们会发现自己对情感和情绪影响人们行为
+                    (包括他们自己的行为) 的不合逻辑，不合理的方式感到困惑。
+                  </p>
+                  <p>
+                    这并不意味着逻辑学家没有感觉。这些人通常希望为他们的朋友和亲人提供情感支持，但他们不一定知道如何做。而且由于他们无法决定提供支持的最佳、最有效的方式，因此他们可能会推迟做任何事情或说任何话。
+                  </p>
+                  <p>
+                    这种 “分析瘫痪”
+                    会影响逻辑师生活的多个领域。这种性格类型的人即使是最小的决定也会过度思考。这会让他们感到效率低下，陷入困境，因为脑海中没完没了的想法让他们筋疲力尽，以至于难以完成任务。
+                  </p>
+                  <p>
+                    好消息是，逻辑学家不必长期陷入困境。他们的独特优势包括把他们从偶尔陷入的困境中解脱出来所需的一切。通过利用他们的创造力和开放的思想，逻辑学家可以发挥他们的全部潜力--既是思想家又是快乐、全面的人。
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e=""></div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e=""></div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >和任何人一样，具有 INTP
+                        人格类型（逻辑学家）的人也希望朋友能给予陪伴和支持。但他们也看重其他东西：智力深度。并非每个人都能满足他们的潜在朋友标准，但当有人符合时，这种联系可以立即激发出来，让所有认为自己与这种看似遥远的人格类型有联系的人感到惊讶。</font
+                      ></font
+                    >
+                  </p>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >挑剔还是精选？</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >或许是因为他们不介意与自己的想法为伍，所以他们不会为了这个目的而与他人交往。因此，与这些性格的人成为亲密的朋友并不总是那么容易。但当
+                        INTP
+                        敞开心扉时，他们会成为活泼、富有想象力的朋友，总是能说出一些有趣或意想不到的话。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="scene">
+                    <img
+                      style="display: none"
+                      alt="INTP（逻辑学家）的朋友"
+                      src="/scene/analysts_Logician_INTP_friendships.svg"
+                    />
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >INTP
+                        型人格的挚友往往与他们对新想法、谜语和解决方案有着相同的热情。但这并不意味着这种性格类型的人只会寻找与他们观点一致的朋友。INTP
+                        型人格并不介意他们的想法受到挑战 -
+                        事实上，他们非常尊重那些让他们重新思考假设并让他们保持警惕的人。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >INTP
+                        型友谊以知识为基础，以交换思想、理论和概念为支撑。对于这种人格类型来说，没有什么比一场持续到凌晨的令人费解的对话更令人兴奋的了。无法跟上或品味截然不同的人（不要与他们谈论名人）可能会感到被忽视或被冷落。这些朋友会将谈话保留在他们认为有意义的话题或他们已经足够喜欢并愿意坚持下去的人身上。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >INTP
+                        的智力风格并不适合所有人，但这没关系。大多数具有这种性格类型的人都喜欢拥有一小群好朋友。</font
+                      ></font
+                    >
+                  </div>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >友谊的意义</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >当朋友带着问题和困境来找他们时，INTP
+                        通常会很乐意提供帮助。这些性格的人可以依靠他们提供合乎逻辑的建议和合理的解决方案，将最混乱的情况变成一份利弊清单。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >但当涉及到情感支持或感情问题时，具有这种性格类型的人可能会感到有点力不从心。对于
+                        INTP
+                        来说，友谊的最大（也是最困难的）教训之一是，有时人们不需要解决问题的建议——他们只需要一个可以依靠的人陪在身边。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >INTP
+                        人格类型的人往往认为他们最大的优势在于他们的头脑。但友谊的经历可以帮助他们意识到，他们能为世界提供的不仅仅是他们的想法，无论这些想法有多么新颖或具有开创性。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >与 INTP
+                        型人格的人在一起，可以期待他们进行发人深省的对话、坦诚相待，以及对各种话题的独特见解。他们虽然很少交朋友，但却非常珍惜友谊，并经过深思熟虑和精心培养。具有
+                        INTP
+                        人格类型的人具有一种不可思议的能力，可以看穿肤浅的外表，例如社会地位或一个人的着装，并欣赏一个人内在的全部潜力。在一个痴迷于融入的世界里，这些人可以激励他们的朋友打破传统，无视潮流，找到自己独特的声音。</font
+                      ></font
+                    >
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >在养育子女方面，与许多社会角色一样，具有 INTP
+                        人格类型（逻辑学家）的人面临着严峻而健康的挑战。有时，他们可能会对孩子混乱、不合理、不断变化但完全自然的情绪感到困惑。毕竟，孩子们还没有发展出
+                        INTP 认为理所当然的那种行动力和逻辑性。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >尽管如此，为人父母仍然意义非凡。INTP
+                        性格的人宽容而开放，他们鼓励孩子独立思考、寻求新知识、表达和捍卫自己的观点。他们将这种经历视为一种动态的学习途径，通过这种学习，他们不仅可以传授智慧，还可以从过程中不断获得洞察力。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="scene">
+                    <img
+                      style="display: none"
+                      alt="INTP（逻辑学家）的父母"
+                      src="/scene/analysts_Logician_INTP_parenthood.svg"
+                    />
+                  </div>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >对自己诚实</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >具有 INTP
+                        人格类型的父母通常不会太担心社会期望。换句话说，他们很少纠结于育儿建议或其他人对孩子行为举止的看法。他们也不太可能强迫孩子走上传统的生活，即学校
+                        &gt; 职业 &gt; 婚姻 &gt; 房子 &gt; 孩子 &gt;
+                        退休（非常感谢，按这个顺序）。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >INTP
+                        父母允许他们的孩子形成自己的原则和观点——尽管他们也可能分享自己的观点和想法，以防万一。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >这并不是说 INTP
+                        型父母对孩子没有期望——他们有。这些性格的人希望孩子有上进心和独立性。他们希望，当孩子长大后，他们拥有必要的批判性思维能力，能够决定自己的人生道路，并弄清楚如何走下去。</font
+                      ></font
+                    >
+                  </p>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >自由的礼物</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >INTP
+                        型人格的人鼓励孩子的好奇心，让他们自由地获取知识并拓展视野。这些父母通常对孩子采取轻松、理智的态度。他们不会强加不必要的规则或严格的时间表，而是致力于创造一个鼓励探索和独立的家庭环境。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >INTP
+                        型人格的人也非常重视孩子的智力发展。他们鼓励孩子独立思考，对一切事物都提出质疑。这些父母更有可能用“你怎么看？”来回答孩子的疑问，而不是直接给出答案。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >对于 INTP
+                        型人格来说，尊重孩子的独立是一种尊重的表现。但对于许多孩子（甚至是年轻人）来说，这种程度的个人自由可能令人望而生畏。如果他们的家庭生活没有合理的界限和父母的指导，这些孩子可能会发现自己注意力不集中或迷失方向，并坚信他们需要自己去探索世界——这确实是一项艰巨的任务。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >矛盾的是，一个由关爱规则和父母认可组成的稳定家庭基础可能正是
+                        INTP 的孩子成长为独特、独立自我所需要的。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >幸运的是，INTP
+                        具有灵活的思维，他们明白自己可以鼓励孩子独立，但又不必太过放任。具有这种性格类型的父母可以通过确保随时为孩子提供建议和支持来重新建立平衡。他们还可以设定清晰、符合常识的界限，并为不良行为设定合理的后果，这样他们的孩子就可以在日常生活中游刃有余，而不必完全依赖自己日益增强的自控力。</font
+                      ></font
+                    >
+                  </p>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >值得挑战</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >对于 INTP
+                        型父母来说，提供情感支持可能并不容易——事实上，除了制定规则和界限之外，这可能是他们面临的最大挑战之一。好消息是，这些性格的人完全有能力应对这一挑战，尽管这可能需要一些努力。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >INTP
+                        希望让孩子有能力自己解决问题并满足自己的需求。这是一个值得追求的目标，但孩子需要稳定的认可和支持基础，以及上述规则和界限，才能独自应对世界。为了帮助建立这个基础，这些父母需要表达他们对孩子的爱、感情和钦佩。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >对于理性的 INTP
+                        人格来说，流露爱意可能显得尴尬或过分，但这些言语和行动对于帮助孩子感受到爱、接受和安全大有帮助。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >INTP
+                        型人格的最大愿望就是希望自己的孩子能够聪明独立地成长。只要这种性格类型的父母在教导孩子理性的同时，也培养他们的同理心，他们的孩子就能成长为自信的成年人，懂得提问、善于思考，无论遇到什么情况，都能照顾好自己。</font
+                      ></font
+                    >
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >INTP
+                        人格类型（逻辑学家）的人思想自由，性格古怪，可能很难找到真正适合自己的工作和职业道路。他们性格古怪，对世界有独特的看法，很少有工作环境是为他们设计的。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >但只要稍加巧思，INTP
+                        就能找到能充分发挥其优势的工作——包括创造力、对创意的热情和创新精神。这些品质与这种性格类型的许多特质一样，都是罕见的。因此，他们只需付出一点努力，就能找到在众多领域脱颖而出的方法。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="scene">
+                    <img
+                      style="display: none"
+                      alt="INTP（逻辑学家）职业"
+                      src="/scene/analysts_Logician_INTP_career_path.svg"
+                    />
+                  </div>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >被呼召去探索</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >INTP
+                        渴望探索，但探索方式却不拘一格。他们发现自己被理论和思想领域所吸引，渴望深入日常生活的表象并探究宇宙的奥秘。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >对于具有 INTP
+                        人格类型的人来说，研究一个新概念或解决一个复杂问题相当于职业生涯的巅峰，因为这些角色允许他们自由地独立灵活地工作——通常是在不寻常的时间。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >这些人充满好奇心，能够发现那些可能令他人眼花缭乱的概念中的美。INTP
+                        人格类型在数学家、分析师、研究人员和科学家中表现良好，尤其是在物理学等较为抽象的领域。工程和技术领域的工作也非常适合他们，尤其是如果这些工作允许发挥创造力的话——INTP
+                        更愿意开拓新方法，而不是整天执行别人的工作。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >尽管如此，最适合这些性格的人的工作并不局限于技术领域。INTP
+                        的分析和研究才能在几乎所有行业中都非常有用，而且他们有能力在看似不太合适的职业中大放异彩。任何允许这些人发明或试验新流程的工作（从教学到管理再到销售）都能给他们带来无尽的满足感。</font
+                      ></font
+                    >
+                  </p>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >更深层次的动机</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >有时，同事可能难以理解这些性格。与许多性格类型不同，INTP
+                        的动机不是想给老板留下深刻印象、被同事接受或获得一个新职位。事实上，他们常常对激励其他员工的事情感到厌烦，例如团队建设练习、茶歇闲聊、签到会议或经理的励志演讲。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >相反，具有这种性格类型的人会受到自己的好奇心和对自己的高标准驱动。对于
+                        INTP
+                        来说，“足够好”很少是足够好的，他们讨厌被称为普通或（更糟）平庸。但他们并非为了努力而努力，而且并非每项任务都能引起他们的同等关注。有时，这些人可能会忽略日常或行政工作，而选择他们认为更有吸引力或更重要的追求。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >INTP
+                        真正想要的是让自己沉浸在一个有趣的项目中，并且他们往往会对任何打断这种专注的事情感到恼火。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >没有什么比与专横的老板打交道或等待别人的意见更让这些性格的人感到沮丧的了。因此，INTP
+                        通常回避结构严谨、僵化的环境或需要大量社交互动或严格遵守等级制度的工作。他们更喜欢按照自己的方式工作。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >因此，实验室非常适合具有这种性格类型的人，几乎任何允许他们执行任务和探索想法而没有太多人监督的环境也非常适合他们。或者，许多
+                        INTP
+                        通过走自营职业路线来保持灵活性和独立性，提供顾问和自由职业者服务。</font
+                      ></font
+                    >
+                  </p>
+                  <h2>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >社交线索</font
+                      ></font
+                    >
+                  </h2>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >如今，几乎每个招聘信息都要求应聘者具备出色的人际交往能力。INTP
+                        型人可能会认为，人际交往能力被高估了——考虑到人工智能、数据和自动化正在彻底改变许多领域，他们的说法可能不无道理。雇主越来越需要像
+                        INTP 这样能够理解复杂系统并具有批判性思维的人。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >INTP
+                        很少在需要他们提供高度情感满足的工作场所中茁壮成长。话虽如此，具有这种性格类型的人如果不具备适应能力就一无是处，他们绝对可以在以人为本的职位上取得成功。在这些职位上，他们可能需要通过尝试新的、更有效的方式来服务客户，以保持思维活跃。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="description-pullout">
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >INTP
+                        型人格的人可能会倾向于避开涉及社交互动的职业，但他们经常发现，任何领域的成功都需要至少一定程度的与他人的合作。</font
+                      ></font
+                    >
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >如果具有这种性格类型的人告诉自己，他们无法处理具有社交元素的工作，那么他们就是在低估自己。作为问题解决者和前瞻性思考者，他们在任何需要清晰、创新思维的角色中都是无价之宝。只要
+                        INTP
+                        性格的人能够微笑和握手，时间足以证明他们的技能，他们就会发现他们的敏锐和创造力很受欢迎。</font
+                      ></font
+                    >
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e=""></div>
+                <!--]-->
+              </div>
+              <div
+                id="pane-undefined"
+                class="el-tab-pane"
+                role="tabpanel"
+                aria-hidden="true"
+                aria-labelledby="tab-undefined"
+                style="display: none"
+                data-v-e26d0c9e=""
+              >
+                <!--[-->
+                <div class="text mbti-template" data-v-e26d0c9e="">
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >到目前为止，您读到的只是对 INTP
+                        人格类型（逻辑学家）的诸多复杂性的介绍。一路上，您可能会喃喃自语：“哇，这太准确了，有点令人毛骨悚然”，或“终于有人理解我了！”您甚至可能会问：“他们怎么比我最亲近的人更了解我？”</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >如果你现在感觉被理解了，那是因为你确实被理解了。多年的研究让我们深入了解了像你这样的
+                        INTP
+                        的独特优势和挑战。这包括你性格类型的阴暗面：为什么其他人似乎就是不理解你，对这个看似乏味和肤浅的世界不断感到沮丧，以及对你所有伟大想法可能永远都无法实现的挥之不去的恐惧。</font
+                      ></font
+                    >
+                  </p>
+                  <div class="scene">
+                    <img
+                      style="display: none"
+                      alt="INTP（逻辑学家）性格"
+                      src="/scene/analysts_Logician_INTP_conclusion.svg"
+                    />
+                  </div>
+                  <div class="description-pullout">
+                    <p>
+                      <font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit"
+                          >INTP
+                          的天赋包括理性、创新和展望更美好未来的能力——但他们不只是想知道是什么让他们变得伟大。这种性格类型希望找到真正有意义的答案，以解决困扰他们想象的看似不可能的问题。</font
+                        ></font
+                      >
+                    </p>
+                  </div>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >这就是为什么我们把帮助像你这样的 INTP 充分</font
+                      ></font
+                    ><em
+                      ><font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit">发挥</font></font
+                      ></em
+                    ><font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >自己的优势作为我们的使命。了解你的性格类型绝对是一件有趣的事情——尤其是如果你像许多
+                        INTP
+                        一样，一生中大部分时间都感到被误解和低估。但这还有更深层次的目的。</font
+                      ></font
+                    >
+                  </p>
+                  <p>
+                    <font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >所以，我们要问您的问题是：您准备好释放您真正的、非凡的潜力了吗？如果是的话，您的高级逻辑学家套件将为您提供有关您的个性、人际关系、职业道路和</font
+                      ></font
+                    ><em
+                      ><font style="vertical-align: inherit"
+                        ><font style="vertical-align: inherit">人生</font></font
+                      ></em
+                    ><font style="vertical-align: inherit"
+                      ><font style="vertical-align: inherit"
+                        >使命（或者了解您……您的许多使命）的新见解。这是一生的旅程——您将在进入下一节时找到开始所需的一切。</font
+                      ></font
+                    >
+                  </p>
+                </div>
+                <!--]-->
+              </div>
+              <!--]-->
+            </div>
+          </div>
+        </div>
+      </main>
+      <!--]-->
+    </div>
+
+    <script
+      async=""
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7002319867557344"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google tag (gtag.js) -->
+    <!-- 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3PRSXQ5TQJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
+
+      gtag('config', 'G-3PRSXQ5TQJ')
+    </script> 
+    -->
+
+    <!-- Baidu Tongji -->
+    <!-- 
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?6e338f57d51465d49b34a3fa8fd2e533";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script> 
+    -->
+  </body>
+</html>
